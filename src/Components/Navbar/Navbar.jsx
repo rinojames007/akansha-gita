@@ -30,7 +30,7 @@ const Navbar = () => {
               href="#"
               className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75"
             >
-              <button className="px-1 py-2 text-center ">
+              <button className="px-1 py-2 text-center">
                 Login/Signup
               </button>
             </a>
