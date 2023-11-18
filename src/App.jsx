@@ -1,5 +1,6 @@
 import Events from "./Components/Events/Events";
 import Hero from "./Components/Hero/Hero";
+import Highlights from "./Components/Highlights/Highlights";
 import Navbar from "./Components/Navbar/Navbar";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
       <Navbar/>
       <Hero images = {images}/>
       <Events/>
+      <Highlights/>
     </>
   )
 }
