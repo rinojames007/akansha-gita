@@ -1,8 +1,32 @@
+import Events from "./Components/Events/Events";
+import Hero from "./Components/Hero/Hero";
+import Highlights from "./Components/Highlights/Highlights";
+import Navbar from "./Components/Navbar/Navbar";
+
 export default function App() {
+  const images = [
+    {
+      url:'./image-slider/01_img.jpeg'
+    },
+    {
+      url:'./image-slider/02_img.jpeg'
+    },
+    {
+      url:'./image-slider/03_img.jpeg'
+    },
+    {
+      url:'./image-slider/04_img.jpeg'
+    }
+    
+  ];
   return (
-    <h1 className="text-red-500 text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+  
+      <Navbar/>
+      <Hero images = {images}/>
+      <Events/>
+      <Highlights/>
+    </>
   )
 }
 
