@@ -22,17 +22,21 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden sm:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">Events</li>
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">Workshops</li>
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">Coordinators</li>
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+            Events
+          </li>
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+            Workshops
+          </li>
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+            Coordinators
+          </li>
           <li className="flex justify-center items-center">
             <a
               href="#"
               className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75"
             >
-              <button className="px-1 py-2 text-center">
-                Login/Signup
-              </button>
+              <button className="px-1 py-2 text-center">Login/Signup</button>
             </a>
           </li>
         </ul>
@@ -40,17 +44,16 @@ const Navbar = () => {
 
       {/* Side-Menu (mobile option) */}
       <div
-        className="side-menu sm:hidden "
+        className="side-menu flex items-center my-auto sm:hidden "
         id="MenuBar"
         onClick={toggleMobileMenu}
       >
         <img src="./sidebar.png" alt="munu-bar" className="h-5 px-2" />
       </div>
-
       <div
-        className={`Mobile-Menu bg-slate-100 transition-all ease-out ${
-          isMobileMenuOpen ? "right-0" : "-right-[100%]"
-        }   absolute top-0 flex flex-col bg-[#fff] w-[60%] rounded-10 space-y-4 delay-200 shadow-sm shadow-blue-300 px-8 py-16 text-lg font-semibold h-fit rounded-xl`}
+        className={`Mobile-Menu  transition-all  ease-out z-10 ${
+          isMobileMenuOpen ? "right-0" : "-right-[100%] hidden"
+        }   absolute top-0 bg-slate-100 w-[60%] rounded-10 space-y-4 delay-200 shadow-sm shadow-blue-300 px-8 py-16 text-lg font-semibold h-fit rounded-xl`}
       >
         <div
           className="cancel font-bold w-fit text-3xl relative -top-8 left-[2%]"
