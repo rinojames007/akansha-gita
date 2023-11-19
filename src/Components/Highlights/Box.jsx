@@ -5,7 +5,7 @@ const Box = () => {
     <div className='border-2 my-4 rounded-xl'>
         <div className="container flex flex-col justify-center sm:items-start items-center sm:flex-row sm:space-x-2 space-y-3 sm:space-y-0 py-3 px-3 sm:p-[20px]">
             <div className="image w-full sm:w-[200px] rounded-lg flex justify-center items-center">
-                <img src="./image-slider/01_img.jpeg" alt="Highlight image" className='rounded-lg w-full' />
+                <img src="./Demo-pics/event.jpeg" alt="Highlight image" className='rounded-lg w-full' />
             </div>
             <div className="description">
                 <h1 className='font-bold text-xl'>Workshop</h1>
