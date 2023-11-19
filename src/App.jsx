@@ -1,8 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Events from "./Components/Events/Events";
-import Hero from "./Components/Hero/Hero";
-import Highlights from "./Components/Highlights/Highlights";
-import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Notification from "./pages/Notification";
