@@ -25,6 +25,7 @@ const Hero = ({ images }) => {
             <button className="w-fit border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] font-semibold sm:text-lg rounded-[15px] text-center hover:scale-[0.90] ">
               Login
             </button>
+            
             <button className="w-fit border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] text-white bg-slate-800 font-semibold hover:scale-[0.85] hover:delay-100 sm:text-lg rounded-[15px] text-center ">
               Register Now
             </button>

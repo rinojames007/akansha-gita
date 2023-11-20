@@ -4,7 +4,7 @@ import Sidebar from "../Components/Sidebar";
 function ProfileEvent(props) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-8 m-auto">
-      <img src={props.img} />
+      <img src={props.img} className="w-full rounded-md" />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {props.name}
@@ -29,15 +29,15 @@ function Profile() {
 
           <ProfileEvent
             name="something else"
-            img="https://picsum.photos/500/300?random=1"
+            img="./Demo-pics/event.jpeg"
           />
           <ProfileEvent
             name="something"
-            img="https://picsum.photos/500/300?random=2"
+            img="./Demo-pics/event.jpeg"
           />
           <ProfileEvent
             name="Race"
-            img="https://picsum.photos/500/300?random=3"
+            img="./Demo-pics/event.jpeg"
           />
         </div>
       </div>
