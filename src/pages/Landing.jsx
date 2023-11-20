@@ -1,5 +1,6 @@
 import EventUpdates from "../Components/Events-updates/EventUpdates";
 import Events from "../Components/Events/Events";
+import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import Highlights from "../Components/Highlights/Highlights";
 import Navbar from "../Components/Navbar/Navbar";
@@ -43,6 +44,7 @@ export default function Landing() {
       <Events/>
       <EventUpdates/>
       <Highlights/>
+      <Footer/>
     </>
   )
 }
