@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,15 +13,24 @@ const Navbar = () => {
     <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
-        <div style={{backgroundImage: `url(./Demo-pics/College-lighting.jpeg)`}} className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80">
-          <h1 className="text-xl font-bold sm:text-3xl text-black">
-            Akanksha
-          </h1>
+        <div
+          style={{ backgroundImage: `url(./Demo-pics/College-lighting.jpeg)` }}
+          className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
+        >
+          <h1 className="text-xl font-bold sm:text-3xl text-black">Akanksha</h1>
         </div>
       </div>
       {/* navigations */}
       <div className="nav-contents hidden sm:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer flex justify-center items-center">
+            <Link
+              to="/profile"
+              className="flex justify-start items-center px-2"
+            >
+              <span className="hidden sm:inline">profile</span>
+            </Link>
+          </li>
           <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
             Events
           </li>
@@ -38,9 +47,6 @@ const Navbar = () => {
             >
               <button className="px-1 py-2 text-center ">Login/Signup</button>
             </a>
-          </li>
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer hidden">
-            Profile
           </li>
         </ul>
       </div>
@@ -65,6 +71,15 @@ const Navbar = () => {
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
+          <li>
+          <Link
+              to="/profile"
+              onClick={toggleMobileMenu}
+              className="flex justify-start items-center px-2"
+            >
+              <span className="sm:hidden">profile</span>
+            </Link>
+          </li>
           <li>
             <a
               className="hover:text-gray-400 active:underline py-1"

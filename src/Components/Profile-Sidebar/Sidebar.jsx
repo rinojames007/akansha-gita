@@ -1,12 +1,18 @@
 import { IoHelp } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
+import { FaHome } from 'react-icons/fa';
 import { RxDashboard } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 
 export default function Sidebar () {
     const sidebarMenuItems = useMemo(() => [
+        {
+          title: "Home",
+          icon: <FaHome />,
+          link: "/",
+        },
         {
           title: "Dashboard",
           icon: <RxDashboard />,
