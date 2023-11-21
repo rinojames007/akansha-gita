@@ -13,8 +13,8 @@ const Navbar = () => {
     <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
-        <div className="header flex justify-center items-center">
-          <h1 className="text-xl font-semibold sm:text-2xl text-white">
+        <div style={{backgroundImage: `url(./Demo-pics/College-lighting.jpeg)`}} className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80">
+          <h1 className="text-xl font-bold sm:text-3xl text-black">
             Akanksha
           </h1>
         </div>
@@ -34,9 +34,9 @@ const Navbar = () => {
           <li className="flex justify-center items-center">
             <a
               href="#"
-              className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75"
+              className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
             >
-              <button className="px-1 py-2 text-center">Login/Signup</button>
+              <button className="px-1 py-2 text-center ">Login/Signup</button>
             </a>
           </li>
         </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
               className="mx-auto px-5 flex justify-center font-semibold bg-slate-800 border-slate-600 border-2 rounded-2xl text-white hover:bg-purple-400 hover:text-black hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75 mb-4"
               onClick={toggleMobileMenu}
             >
-              <button className="px-1 py-2 text-sm text-center ">
+              <button className="px-1 py-2 text-sm text-center hover:scale-[0.85] ">
                 Login/Signup
               </button>
             </a>

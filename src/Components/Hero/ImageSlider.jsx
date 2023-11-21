@@ -23,7 +23,7 @@ const ImageSlider = ({ images }) => {
   }, [currentIndex]);
 
   return (
-    <div className="relative shadow-sm shadow-black border w-[93%] sm:w-[85%] h-[250px] sm:h-[450px] overflow-hidden rounded-xl mx-auto">
+    <div className="relative shadow-sm shadow-black border w-[93%] sm:w-[95%] h-[250px] sm:h-[450px] overflow-hidden rounded-xl mx-auto">
   {images.map((image, index) => (
     <div
       key={index}
@@ -33,7 +33,7 @@ const ImageSlider = ({ images }) => {
       style={{ transform: `translatey(-${currentIndex * 100}%)` }}
     >
       <img
-        className="w-full h-full object-cover rounded-xl"
+        className="w-[100%] h-[100%] object-fill object-center rounded-xl "
         src={image.url}
         alt={`Slide ${index + 1}`}
       />
