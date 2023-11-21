@@ -30,19 +30,20 @@ export default function Sidebar () {
       ]);
     
     return (
-        <div className="col-span-2">
+        <div className="bg-slate-300 h-screen w-full py-5">
         <div>
-          <ul className="col-span-2 h-screen">
+          <ul className="">
             {sidebarMenuItems.map((item) => (
               <li key={item.title}>
                 <Link
                   to={item.link}
-                  className=" flex justify-start items-center mt-4 px-2"
+                  className="flex justify-start items-center mt-5 px-2"
                 >
-                  <span className="text-3xl px-2">{item.icon}</span>
+                  <span className="sm:text-3xl text-2xl hover:scale-50  px-2">{item.icon}</span>
                   <span className="hidden sm:inline">{item.title}</span>
                 </Link>
               </li>
+              
             ))}
           </ul>
         </div>

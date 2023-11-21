@@ -58,7 +58,7 @@ const Resistration = () => {
             <input type="radio" name="Gender" value="F" />
             <span>Female</span>
           </div>
-          <div className="numbers flex flex-col justify-center items-center space-x-4">
+          <div className="numbers flex justify-center items-center space-x-4">
             <label htmlFor="PhoneNumber">Phone Number:</label>
             <input type="tel" placeholder="0000000000" className="border-2" name="PhoneNumber" />
 

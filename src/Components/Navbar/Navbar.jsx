@@ -39,6 +39,9 @@ const Navbar = () => {
               <button className="px-1 py-2 text-center ">Login/Signup</button>
             </a>
           </li>
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer hidden">
+            Profile
+          </li>
         </ul>
       </div>
 
