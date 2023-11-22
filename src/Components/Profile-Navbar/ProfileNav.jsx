@@ -93,9 +93,7 @@ const ProfileNav = () => {
         >
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
-        {/* <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
-          
-        </ul> */}
+        
         <ul className="flex flex-col items-center justify-center text-xl">
           {sidebarMenuItems.map((item) => (
             <li key={item.title}>

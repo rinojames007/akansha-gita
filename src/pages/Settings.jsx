@@ -1,5 +1,6 @@
 import Sidebar from "../Components/Profile-Sidebar/Sidebar";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
+import ProfileSetting from "../Components/ProfileSetting/ProfileSetting";
 
 export default function Settings() {
   return (
@@ -14,6 +15,8 @@ export default function Settings() {
     </div>
     <div className="hero w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
       <p className="text-3xl font-bold">Profile Settings page....</p>
+      <ProfileSetting/>
+      
     </div>
     </div>
     </div>

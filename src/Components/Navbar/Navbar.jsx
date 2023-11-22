@@ -41,12 +41,12 @@ const Navbar = () => {
             Coordinators
           </li>
           <li className="flex justify-center items-center">
-            <a
-              href="#"
+            <Link
+              to="/login"
               className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
             >
               <button className="px-1 py-2 text-center ">Login/Signup</button>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

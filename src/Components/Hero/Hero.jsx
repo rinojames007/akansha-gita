@@ -1,5 +1,6 @@
 import React from "react";
 import ImageSlider from "../Hero/ImageSlider";
+import { Link } from "react-router-dom";
 
 const Hero = ({ images }) => {
   return (
@@ -22,13 +23,16 @@ const Hero = ({ images }) => {
 
           {/* login-register buttons */}
           <div className="login-register flex space-x-2 sm:space-x-5 jusce">
+            <Link to="/login">
             <button className="w-fit border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] font-semibold sm:text-lg rounded-[15px] text-center hover:scale-[0.90] ">
               Login
             </button>
-            
+            </Link>
+            <Link to="/resister">
             <button className="w-fit border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] text-white bg-slate-800 font-semibold hover:scale-[0.85] hover:delay-100 sm:text-lg rounded-[15px] text-center ">
               Register Now
             </button>
+            </Link>
           </div>
         </div>
       </div>
