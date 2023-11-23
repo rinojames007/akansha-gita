@@ -1,5 +1,6 @@
 import React from "react";
 import EventBox from "../Components/Event-box/EventBox";
+import Navbar from "../Components/Navbar/Navbar";
 
 const Anwesh = () => {
   const AnweshElements = [
@@ -32,6 +33,7 @@ const Anwesh = () => {
   ];
   return (
     <div>
+        <Navbar/>
       {/* Tech Fest */}
       <div className="container flex flex-col justify-center items-center w-full">
         <h1 className="text-5xl font-bold mt-4">Anwesh</h1>
