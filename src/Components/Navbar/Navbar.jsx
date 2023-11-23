@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,38 +13,52 @@ const Navbar = () => {
     <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
-        <div style={{backgroundImage: `url(./Demo-pics/College-lighting.jpeg)`}} className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80">
-          <h1 className="text-xl font-bold sm:text-3xl text-black">
-            Akanksha
-          </h1>
+        <div
+          style={{ backgroundImage: `url(./Demo-pics/College-lighting.jpeg)` }}
+          className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
+        >
+          <h1 className="text-xl font-bold sm:text-3xl text-black">Akanksha</h1>
         </div>
       </div>
       {/* navigations */}
-      <div className="nav-contents hidden sm:flex items-center">
+      <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
-            Events
+          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer flex justify-center items-center">
+            <Link
+              to="/profile"
+              className="flex justify-start items-center px-2"
+            >
+              <span className="hidden md:inline">profile</span>
+            </Link>
           </li>
           <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
-            Workshops
+          <Link
+          to="/about">
+           About
+           </Link>
           </li>
+          
           <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+          <Link
+          to="/coordinators">
             Coordinators
+            </Link>
           </li>
+          
           <li className="flex justify-center items-center">
-            <a
-              href="#"
+            <Link
+              to="/login"
               className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
             >
               <button className="px-1 py-2 text-center ">Login/Signup</button>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
 
       {/* Side-Menu (mobile option) */}
       <div
-        className="side-menu flex items-center my-auto sm:hidden "
+        className="side-menu flex items-center my-auto md:hidden "
         id="MenuBar"
         onClick={toggleMobileMenu}
       >
@@ -63,6 +77,15 @@ const Navbar = () => {
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
           <li>
+          <Link
+              to="/profile"
+              onClick={toggleMobileMenu}
+              className="flex justify-start items-center px-2"
+            >
+              <span className="sm:hidden">profile</span>
+            </Link>
+          </li>
+          <li>
             <a
               className="hover:text-gray-400 active:underline py-1"
               href="#"
@@ -71,43 +94,35 @@ const Navbar = () => {
               Home
             </a>
           </li>
+          
           <li>
-            <a
+            <Link
               className="hover:text-gray-400 active:underline py-1"
-              href="#"
+              to="/about"
               onClick={toggleMobileMenu}
             >
-              Events
-            </a>
+              About
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="hover:text-gray-400 active:underline py-1"
-              href="#"
-              onClick={toggleMobileMenu}
-            >
-              Workshops
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-gray-400 active:underline py-1"
-              href="#"
+              to="/coordinators"
               onClick={toggleMobileMenu}
             >
               Coordinators
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/login"
               className="mx-auto px-5 flex justify-center font-semibold bg-slate-800 border-slate-600 border-2 rounded-2xl text-white hover:bg-purple-400 hover:text-black hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75 mb-4"
               onClick={toggleMobileMenu}
             >
               <button className="px-1 py-2 text-sm text-center hover:scale-[0.85] ">
                 Login/Signup
               </button>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

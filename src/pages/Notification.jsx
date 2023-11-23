@@ -1,9 +1,29 @@
-import Sidebar from "../Components/Sidebar";
+import Sidebar from "../Components/Profile-Sidebar/Sidebar";
+import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
+import Alert from "../Components/Notification/Alert";
+// import { useState } from "react";
+
 export default function Notification() {
   return (
-    <div className="grid grid-cols-12 w-screen h-screen">
-      <Sidebar />
-      notifications page
+    <div className="container flex flex-col justify-center w-screen h-full ">
+      <div className="navbar w-full sm:hidden">
+        <ProfileNav />
+      </div>
+      <div className="container flex justify-center w-full h-full">
+        <div className="w-[20%] hidden sm:flex h-screen">
+          <Sidebar />
+        </div>
+        <div className="hero sm:w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
+          <p className="text-3xl font-bold">Notification page....</p>
+          <div className="container sm:w-[80%] mx-auto py-5">
+            <Alert/>
+            <Alert/>
+            <Alert/>
+            <Alert/>
+            <Alert/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

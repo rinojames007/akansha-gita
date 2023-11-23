@@ -38,13 +38,18 @@ export default function Landing() {
   ];
   return (
     <>
-  
+    {/* #FF0076 – #590FB7 */}
+    {/* #402662 – #3900A6 */}
+    {/* #000066 – #6699FF */}
+      <body className="bg-slate-100 h-full">   
+      
       <Navbar/>
       <Hero images = {images}/>
       <Events/>
       <EventUpdates/>
       <Highlights/>
       <Footer/>
+      </body>
     </>
   )
 }
