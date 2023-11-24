@@ -2,7 +2,7 @@ import React from "react";
 import ImageSlider from "../Hero/ImageSlider";
 import { Link } from "react-router-dom";
 
-const Hero = ({ images }) => {
+const Hero = () => {
   return (
     <div className="flex flex-col sm:flex-row h-fit w-full border-2 sm:space-x-3">
       {/* left-contents */}
@@ -40,7 +40,7 @@ const Hero = ({ images }) => {
       {/* right-contents */}
       <div className="right Pt-[25%] w-full sm:w-[60%] flex justify-center items-center mx-auto">
         <div className="container py-[50px]">
-          <ImageSlider images={images} />
+          <ImageSlider />
         </div>
       </div>
     </div>

@@ -16,16 +16,16 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/coordinators" element={<Coordinators/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/resister" element={<Resistration/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/coordinators" element={<Coordinators />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/resister" element={<Resistration />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notification />} />
-        <Route path="/anwesh" element={<Anwesh/>}/>
-        <Route path="/ahwan" element={<Ahwan/>}/>
-        <Route path="/akanksha" element={<Akanksha/>}/>
+        <Route path="/anwesh" element={<Anwesh />} />
+        <Route path="/ahwan" element={<Ahwan />} />
+        <Route path="/akanksha" element={<Akanksha />} />
         <Route path="/help" element={<Help />} />
       </Routes>
     </BrowserRouter>
