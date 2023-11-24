@@ -2,7 +2,7 @@ import React from "react";
 
 const EventBox = (props) => {
   return (
-    <div className=" flex justify-center items-center sm:w-[48%] md:w-[30%] w-[90%] my-6">
+    <div className=" flex justify-center items-center sm:w-[48%] md:w-[30%] w-[90%] my-6 shadow-xl shadow-blue-700 rounded-xl">
       <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  w-full ">
         
           <img
@@ -22,6 +22,7 @@ const EventBox = (props) => {
           Seize the opportunity to showcase your skills, learn from the best, 
           and leave your mark on the digital frontier.
           </p>
+          <div className="flex justify-around">
           <a
             href="#"
             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -29,6 +30,14 @@ const EventBox = (props) => {
            Details
             
           </a>
+          <a
+            href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+           Register
+            
+          </a>
+          </div>
         </div>
       </div>
     </div>

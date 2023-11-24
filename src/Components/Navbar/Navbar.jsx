@@ -13,12 +13,14 @@ const Navbar = () => {
     <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
+        <Link to='/' className="w-full h-full">
         <div
-          style={{ backgroundImage: `url(./Demo-pics/College-lighting.jpeg)` }}
+          style={{ backgroundImage: `url(./Demo-pics/logo.jpg)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
-          <h1 className="text-xl font-bold sm:text-3xl text-black">Akanksha</h1>
+          <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
         </div>
+        </Link>
       </div>
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
@@ -28,7 +30,7 @@ const Navbar = () => {
               to="/profile"
               className="flex justify-start items-center px-2"
             >
-              <span className="hidden md:inline">profile</span>
+              <span className="hidden md:inline">Profile</span>
             </Link>
           </li>
           <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
