@@ -17,7 +17,7 @@ export default function Landing() {
       <Hero/>
       <Events/>
       <EventUpdates/>
-      <Highlights images = {images}/>
+      {/* <Highlights images = {images}/> */}
       <Footer/>
       </body>
     </>
