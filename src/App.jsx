@@ -25,9 +25,9 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notification />} />
-        <Route path="/anwesh" element={<Anwesh/>}/>
-        <Route path="/ahwan" element={<Ahwan/>}/>
-        <Route path="/akanksha" element={<Akanksha/>}/>
+        <Route path="/anwesh" element={<Anwesh />} />
+        <Route path="/ahwan" element={<Ahwan />} />
+        <Route path="/akanksha" element={<Akanksha />} />
         <Route path="/help" element={<Help />} />
       </Routes>
     </BrowserRouter>
