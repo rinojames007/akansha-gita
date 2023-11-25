@@ -90,13 +90,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a
+            <Link
               className="hover:text-gray-400 active:underline py-1"
-              href="#"
+              to='/'
               onClick={toggleMobileMenu}
             >
               Home
-            </a>
+            </Link>
           </li>
           
           <li>
