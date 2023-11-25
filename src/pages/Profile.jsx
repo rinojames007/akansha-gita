@@ -119,7 +119,7 @@ function Profile() {
 
 export default Profile;
 
-{
+
   /* <Carousel
                   cards={cards}
                   height="400px"
@@ -128,4 +128,4 @@ export default Profile;
                   offset={2}
                   showArrows={false}
                 /> */
-}
+
