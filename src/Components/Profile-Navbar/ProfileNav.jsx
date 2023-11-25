@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useMemo } from "react";
 
 const ProfileNav = () => {
@@ -40,18 +41,20 @@ const ProfileNav = () => {
   ]);
 
   return (
-    <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
+    <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 ">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
+        <Link to="/" className="h-full w-full">
         <div
-          style={{ backgroundImage: `url(./Demo-pics/College-lighting.jpeg)` }}
+          style={{ backgroundImage: `url(./Demo-pics/cultural.jpg)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
-          <h1 className="text-xl font-bold sm:text-3xl text-black">Akanksha</h1>
+          <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
         </div>
+        </Link>
       </div>
       {/* navigations */}
-      <div className="nav-contents hidden sm:flex items-center">
+      <div className="nav-contents hidden md:flex items-center">
         {/* <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
           
         </ul> */}
@@ -76,11 +79,11 @@ const ProfileNav = () => {
 
       {/* Side-Menu (mobile option) */}
       <div
-        className="side-menu flex items-center my-auto sm:hidden "
+        className="side-menu flex items-center mx-2 my-auto md:hidden "
         id="MenuBar"
         onClick={toggleMobileMenu}
       >
-        <img src="./sidebar.png" alt="munu-bar" className="h-5 px-2" />
+       <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
       </div>
       <div
         className={`Mobile-Menu  transition-all  ease-out z-10 ${
@@ -93,7 +96,7 @@ const ProfileNav = () => {
         >
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
-        
+
         <ul className="flex flex-col items-center justify-center text-xl">
           {sidebarMenuItems.map((item) => (
             <li key={item.title}>

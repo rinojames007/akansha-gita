@@ -11,6 +11,7 @@ import Ahwan from "./pages/Ahwan";
 import Akanksha from "./pages/Akanksha";
 import About from "./pages/About";
 import Coordinators from "./pages/Coordinators";
+import EventDetails from "./pages/EventDetails";
 export default function App() {
   return (
     <BrowserRouter>
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/coordinators" element={<Coordinators/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/resister" element={<Resistration/>} />
+        <Route path="/register" element={<Resistration/>} />
+        <Route path="/eventDetails" element={<EventDetails/>}/>
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notification />} />

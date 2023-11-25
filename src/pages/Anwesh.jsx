@@ -35,9 +35,9 @@ const Anwesh = () => {
     <div>
         <Navbar/>
       {/* Tech Fest */}
-      <div className="container flex flex-col justify-center items-center w-full">
-        <h1 className="text-5xl font-bold mt-4">Anwesh</h1>
-        <p className="text-sm mb-8">
+      <div className="container pt-[60px] bg-gradient-to-b from-black via-purple-900 to-black h-full flex flex-col justify-center items-center w-full">
+        <h1 className="text-5xl font-bold my-4 text-white">Anwesh</h1>
+        <p className="text-sm mb-8 text-slate-200">
           Welcome to the gateway of innovation! Our Techfest Registration Page
           is your ticket to an exhilarating world of technology and creativity.
         </p>

@@ -5,7 +5,7 @@ import Alert from "../Components/Notification/Alert";
 
 export default function Notification() {
   return (
-    <div className="container flex flex-col justify-center w-screen h-full ">
+    <div className="container flex flex-col justify-center w-screen h-full bg-gradient-to-b from-black via-purple-900 to-black">
       <div className="navbar w-full sm:hidden">
         <ProfileNav />
       </div>
@@ -14,7 +14,7 @@ export default function Notification() {
           <Sidebar />
         </div>
         <div className="hero sm:w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
-          <p className="text-3xl font-bold">Notification page....</p>
+          <p className="text-3xl font-bold text-white">Notification page....</p>
           <div className="container sm:w-[80%] mx-auto py-5">
             <Alert/>
             <Alert/>

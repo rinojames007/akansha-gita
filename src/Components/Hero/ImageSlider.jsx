@@ -40,13 +40,13 @@ const ImageSlider = ({ images }) => {
     </div>
   ))}
   <button
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white h-8"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
     onClick={prevSlide}
   >
     <img src="./slider-arrow/left-arrow.png" alt="left-arrow" className="px-3 w-full h-6 py-2 bg-white rounded-full " />
   </button>
   <button
-    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white h-8"
+    className="absolute right-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
     onClick={nextSlide}
   >
     <img src="./slider-arrow/right-arrow.png" alt="right-arrow" className="px-3 w-full h-6 py-2 bg-white rounded-full " />

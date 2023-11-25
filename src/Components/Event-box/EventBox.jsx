@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EventBox = (props) => {
   return (
@@ -23,20 +24,20 @@ const EventBox = (props) => {
           and leave your mark on the digital frontier.
           </p>
           <div className="flex justify-around">
-          <a
-            href="#"
+          <Link
+            to='/eventDetails'
             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
            Details
             
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to='/register'
             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
            Register
             
-          </a>
+          </Link>
           </div>
         </div>
       </div>

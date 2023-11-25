@@ -36,9 +36,9 @@ export default function Sidebar () {
       ]);
     
     return (
-        <div className="bg-slate-300 h-screen w-full py-5">
+        <div className="bg-gray-900 h-screen w-full py-5">
         <div>
-          <ul className="">
+          <ul className="flex text-white flex-col w-full">
             {sidebarMenuItems.map((item) => (
               <li key={item.title}>
                 <Link

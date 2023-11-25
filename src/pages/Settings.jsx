@@ -4,7 +4,7 @@ import ProfileSetting from "../Components/ProfileSetting/ProfileSetting";
 
 export default function Settings() {
   return (
-    <div className="container flex flex-col justify-center w-screen h-full ">
+    <div className="container bg-gradient-to-b from-black via-purple-900 to-black flex flex-col justify-center w-screen h-full ">
       <div className="navbar w-full sm:hidden">
         <ProfileNav/>
       </div>
@@ -13,8 +13,8 @@ export default function Settings() {
       <Sidebar />
 
     </div>
-    <div className="hero w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
-      <p className="text-3xl font-bold">Profile Settings page....</p>
+    <div className="hero md:w-[80%] w-full h-full md:m-4 flex-col justify-center text-center item-center ">
+      <p className="text-3xl font-bold text-white" >Profile Settings page....</p>
       <ProfileSetting/>
       
     </div>

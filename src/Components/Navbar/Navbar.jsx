@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[50px] sm:h-[80px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 border-2">
+    <nav className="h-[50px] absolute sm:fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 ">
       {/* Logo */}
-      <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
+      <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to='/' className="w-full h-full">
         <div
-          style={{ backgroundImage: `url(./Demo-pics/logo.jpg)` }}
+          style={{ backgroundImage: `url(./Slider/Photo7.JPG)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
@@ -30,27 +32,27 @@ const Navbar = () => {
               to="/profile"
               className="flex justify-start items-center px-2"
             >
-              <span className="hidden md:inline">Profile</span>
+              <span className="hidden md:inline text-white">Profile</span>
             </Link>
           </li>
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+          <li className="hover:underline text-white hover:text-gray-400 hover:cursor-pointer">
           <Link
           to="/about">
            About
            </Link>
           </li>
           
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer">
+          <li className="hover:underline text-white hover:text-gray-400 hover:cursor-pointer">
           <Link
           to="/coordinators">
             Coordinators
             </Link>
           </li>
           
-          <li className="flex justify-center items-center">
+          <li className="flex justify-center text-white items-center">
             <Link
               to="/login"
-              className="mx-auto px-3 flex justify-center font-bold border-slate-600 border-2 rounded-2xl text-black hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
+              className="mx-auto px-3 flex text-white justify-center font-bold border-slate-600 border-2 rounded-2xl  hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
             >
               <button className="px-1 py-2 text-center ">Login/Signup</button>
             </Link>
@@ -60,11 +62,11 @@ const Navbar = () => {
 
       {/* Side-Menu (mobile option) */}
       <div
-        className="side-menu flex items-center my-auto md:hidden "
+        className="side-menu px-2 flex items-center my-auto md:hidden "
         id="MenuBar"
         onClick={toggleMobileMenu}
       >
-        <img src="./sidebar.png" alt="munu-bar" className="h-5 px-2" />
+        <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
       </div>
       <div
         className={`Mobile-Menu  transition-all  ease-out z-10 ${

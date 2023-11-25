@@ -35,9 +35,9 @@ const Ahwan = () => {
     <div>
         <Navbar/>
       {/* Tech Fest */}
-      <div className="container flex flex-col justify-center items-center w-full">
-        <h1 className="text-5xl font-bold mt-4">Ahwan</h1>
-        <p className="text-sm mb-8 text-center">
+      <div className="container pt-[60px] bg-gradient-to-b from-black via-purple-900 to-black h-full flex flex-col justify-center items-center w-full">
+        <h1 className="text-5xl font-bold my-4 text-white">Ahwan</h1>
+        <p className="text-sm mb-8 text-center text-slate-200">
           Welcome to the gateway of Our Sports Registration Page Get ready to
           dive into a world of physical prowess and sportsmanship!
         </p>

@@ -8,14 +8,14 @@ const EventList = () => {
                         <img src="./Demo-pics/face-paint.jpeg" alt="event-image" className='sm:w-[50px] w-[60px] rounded-full' /> 
                     </div>
                     <div className="event-Info sm:mx-10  flex flex-col justify-center items-center">
-                        <p className='font-semibold sm:text-lg'>Face Painting</p>
-                        <p className='text-sm font-light text-slate-500'>Gita Garden-2</p>
-                        <p className='text-slate-600 text-xs sm:hidden'>Fri,28 Jan 2023</p>
-                        <p className='text-slate-600 text-xs sm:hidden'>14:25 - 15:35</p>
+                        <p className='font-semibold sm:text-lg text-white'>Face Painting</p>
+                        <p className='text-sm font-light text-slate-200'>Gita Garden-2</p>
+                        <p className='text-slate-300 text-xs sm:hidden'>Fri,28 Jan 2023</p>
+                        <p className='text-slate-300 text-xs sm:hidden'>14:25 - 15:35</p>
                     </div>
                     <div className="event-timming sm:mx-10 sm:flex flex-col justify-center items-center hidden">
-                        <p className='text-slate-700 font-semibold'>Fri,28 Jan 2023</p>
-                        <p className='text-slate-700 font-semibold'>14:25 - 15:35</p>
+                        <p className='text-slate-200 font-semibold'>Fri,28 Jan 2023</p>
+                        <p className='text-slate-200 font-semibold'>14:25 - 15:35</p>
                     </div>
                 </div>
     </div>
