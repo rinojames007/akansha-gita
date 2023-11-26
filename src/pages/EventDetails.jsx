@@ -4,10 +4,10 @@ import React from "react";
 
 const EventDetails = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full py-4 2xl:h-screen">
       <Navbar />
       <div className=" pt-[60px] h-full">
-        <div className="container flex flex-col md:flex-row">
+        <div className=" flex flex-col md:flex-row">
           <div className="left md:w-[50%] md:p-6 p-2">
             <img
               src="./Demo-pics/Robo-wars.webp"
@@ -52,7 +52,7 @@ const EventDetails = () => {
                   <h1 className="text-white font-semibold md:text-xl">
                     Event Incharge
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white md:text-lg">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
@@ -62,7 +62,7 @@ const EventDetails = () => {
                   <h1 className="text-white font-semibold md:text-xl">
                     Event Coordinator
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white md:text-lg">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
@@ -72,7 +72,7 @@ const EventDetails = () => {
                   <h1 className="text-white font-semibold md:text-xl">
                     Event Volunteer
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white md:text-lg">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>

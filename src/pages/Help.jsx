@@ -5,11 +5,11 @@ export default function Help() {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
      
-      <div className="container flex flex-col justify-center w-screen h-full ">
+      <div className=" flex flex-col justify-center w-screen h-full ">
         <div className="navbar w-full sm:hidden">
           <ProfileNav />
         </div>
-        <div className="container flex justify-center w-full h-full">
+        <div className=" flex justify-center w-full h-full">
           <div className="w-[20%] hidden sm:flex h-screen">
             <Sidebar />
           </div>

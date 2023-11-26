@@ -7,7 +7,7 @@ const Hero = () => {
     <div style={{ backgroundImage: `url(./Demo-pics/cultural.jpg)` }} className="flex justify-center items-center bg-no-repeat bg-cover bg-center  h-screen w-full ">
       {/* left-contents */}
       <div className="left w-full mx-auto flex justify-center items-center ">
-        <div className="container flex flex-col items-center justify-center ">
+        <div className=" flex flex-col items-center justify-center ">
           <div className="header text-center">
             <h1 className=" text-2xl sm:text-6xl font-bold text-white">
               Welcome Back
@@ -22,9 +22,9 @@ const Hero = () => {
           </div>
 
           {/* login-register buttons */}
-          <div className="login-register flex space-x-2 sm:space-x-5 jusce">
+          <div className="login-register hidden flex space-x-2 sm:space-x-5 jusce">
             <Link to="/login">
-            <button className="w-fit border-[2px] bg-orange-500 hover:bg-slate-800 hover:text-white border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] font-semibold sm:text-lg rounded-[15px] text-center hover:scale-[0.90] ">
+            <button className="w-[200px] border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] text-white bg-orange-400 font-semibold hover:scale-[0.85] hover:delay-100 sm:text-lg rounded-[15px] text-center ">
               Login
             </button>
             </Link>

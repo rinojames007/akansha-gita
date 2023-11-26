@@ -4,7 +4,7 @@ const Resistration = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 pt-[60px] to-black h-full">
       <h1 className="md:text-5xl text-3xl  font-bold text-center my-8 text-white">Register Yourself</h1>
-      <div className="container h-full mx-auto border-2 rounded-xl md:p-6 md:w-[80%] w-[90%] ">
+      <div className=" h-full mx-auto border-2 rounded-xl md:p-6 md:w-[80%] w-[90%] ">
         <form
           action="#"
           className="flex flex-col  space-y-9 p-3 mx-auto"

@@ -3,7 +3,7 @@ import React from "react";
 const ProfileSetting = () => {
   return (
     <div>
-      <div className="container h-full mt-[100px] md:p-6 w-[100%]  ">
+      <div className=" h-full md:mt-[100px] md:p-6 w-[100%] mt-2 ">
         <form
           action="#"
           className="flex flex-col space-y-5 p-3 mx-auto"
@@ -114,7 +114,7 @@ const ProfileSetting = () => {
           <input
             type="submit"
             id="submit"
-            className=" flex mx-auto px-3 bg-slate-600 py-2 rounded-lg hover:cursor-pointer hover:scale-90 text-white"
+            className=" flex mx-auto w-[200px] justify-center px-3 bg-slate-600 py-3 text-lg rounded-lg hover:cursor-pointer hover:scale-90 text-white"
           />
         </form>
       </div>

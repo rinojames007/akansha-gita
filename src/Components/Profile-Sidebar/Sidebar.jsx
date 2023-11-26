@@ -16,7 +16,7 @@ export default function Sidebar () {
         {
           title: "Dashboard",
           icon: <RxDashboard />,
-          link: "/profile",
+          link: "/organiserProfile",
         },
         {
           title: "Profile Settings",
@@ -45,8 +45,8 @@ export default function Sidebar () {
                   to={item.link}
                   className="flex justify-start items-center mt-5 px-2"
                 >
-                  <span className="sm:text-3xl text-2xl hover:scale-50  px-2">{item.icon}</span>
-                  <span className="hidden sm:inline">{item.title}</span>
+                  <span className="sm:text-3xl text-2xl hover:scale-90  px-2">{item.icon}</span>
+                  <span className="hidden sm:flex hover:scale-90">{item.title}</span>
                 </Link>
               </li>
               
