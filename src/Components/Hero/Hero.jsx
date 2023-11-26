@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
 
           {/* login-register buttons */}
-          <div className="login-register hidden flex space-x-2 sm:space-x-5 jusce">
+          <div className="login-register hidden  space-x-2 sm:space-x-5 jusce">
             <Link to="/login">
             <button className="w-[200px] border-[2px] border-black px-[20px] py-[6px] sm:px-[30px] sm:py-[8px] text-white bg-orange-400 font-semibold hover:scale-[0.85] hover:delay-100 sm:text-lg rounded-[15px] text-center ">
               Login
