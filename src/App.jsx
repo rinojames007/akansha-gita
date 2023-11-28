@@ -21,6 +21,15 @@ import AhwanEventGirls from "./pages/AhwanEventGirls";
 import OrganiserSetting from "./pages/OrganiserSetting";
 import OrganiserNotification from "./pages/OrganiserNotification";
 import OrganiserHelp from "./pages/OrganiserHelp";
+import EventInchargeProfile from "./pages/EventInchargeProfile";
+import EventInchargeSettings from "./pages/EventInchargeSettings";
+import EventInchargeNotifications from "./pages/EventInchargeNotifications";
+import EventInchargeHelp from "./pages/EventInchargeHelp";
+import EventCoordinatorProfile from "./pages/EventCoordinatorProfile";
+import EventCoordinatorSettings from "./pages/EventCoordinatorSettings";
+import EventCoordinatorsNotifications from "./pages/EventCoordinatorsNotifications";
+import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -47,6 +56,14 @@ export default function App() {
         <Route path="/akankshaWinners" element={<AkankshaWinnersPage/>} />
         <Route path="/ahwanBoys" element={<AhwanEventBoys/>}/>
         <Route path="/ahwanGirls" element={<AhwanEventGirls/>}/>
+        <Route path="/eventInchargeProfile" element={<EventInchargeProfile/>} />
+        <Route path="/eventInchargeSettings" element={<EventInchargeSettings/>} />
+        <Route path="/eventInchargeNotifications" element={<EventInchargeNotifications/>} />
+        <Route path="/eventInchargeHelp" element={<EventInchargeHelp/>} />
+        <Route path="/eventCoordinatorProfile" element={<EventCoordinatorProfile/>} />
+        <Route path="/eventCoordinatorSettings" element={<EventCoordinatorSettings/>} />
+        <Route path="/eventCoordinatorNotifications" element={<EventCoordinatorsNotifications/>} />
+        <Route path="/eventCoordinatorHelp" element={<EventCoordinatorsHelp/>} />
 
       </Routes>
     </BrowserRouter>
