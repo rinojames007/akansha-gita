@@ -1,5 +1,5 @@
 import React from "react";
-
+import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
 
 const Hero = () => { 
@@ -36,8 +36,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      
+      {/* right-contents */}
+      <div className="right Pt-[25%] w-full sm:w-[60%] flex justify-center items-center mx-auto">
+        <div className="container py-[50px]">
+          <ImageSlider />
+        </div>
+      </div>
     </div>
   );
 };
