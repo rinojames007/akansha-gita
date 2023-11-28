@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-import Sidebar from "../Components/Profile-Sidebar/Sidebar";
+
 
 import EventCard from "../Components/Events/EventCard";
 import { Link } from "react-router-dom";

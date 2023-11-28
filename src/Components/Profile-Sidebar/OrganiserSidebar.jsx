@@ -6,11 +6,12 @@ import { FaHome } from "react-icons/fa";
 import { RxDashboard } from "react-icons/rx";
 import SideNavElements from "../Navbar/SideNavElements";
 
+
 const OrganiserSidebar = () => {
   return (
     <div className="bg-gray-900 h-screen w-full py-5">
       <SideNavElements title="Home" icon={<FaHome />} link="/" />
-
+      
       <SideNavElements
         title="OrgDashboard"
         icon={<RxDashboard />}
