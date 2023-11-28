@@ -1,16 +1,14 @@
 import React from "react";
-import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-
-
 import EventCard from "../Components/Events/EventCard";
 import { Link } from "react-router-dom";
 import OrganiserSidebar from "../Components/Profile-Sidebar/OrganiserSidebar";
+import OrganiserProfileNavbar from "../Components/Profile-Navbar/OrganiserProfileNavbar";
 
 const OrganiserProfile = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
       <div className="phone-nav md:hidden">
-        <ProfileNav />
+        <OrganiserProfileNavbar/>
       </div>
       <div className="Organiser-Profile-page w-full h-full flex justify-center">
         <div className="nav  hidden md:flex md:w-[20%]">

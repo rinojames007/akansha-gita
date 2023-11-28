@@ -33,14 +33,18 @@ const EventDetails = () => {
                   <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                 </ul>
               </div>
-              <div className="prizes flex items-center space-x-2 text-white">
-                <p className="text-xl flex ">
-                  Prize: <span className="text-slate-200 text-lg">5000</span>
+              <div className="prizes-timmings space-x-3 items-center justify-center flex flex-wrap text-white">
+                
+                <p className="text-xl ">
+                  Prize: <span className="text-slate-300 text-sm ml-1">5000</span>
+                </p>
+                <p className="text-xl  ">
+                  Venue: <span className="text-slate-300 text-sm ml-1">Lab 10 (Main Building)</span>
                 </p>
               </div>
-              <div className="timmings flex space-x-3">
+              <div className="timmings flex space-x-3 justify-around flex-wrap">
                 <p className="text-white">
-                  Date:{" "}
+                  Date:
                   <span className="text-slate-300 text-sm">4/02/2024</span>
                 </p>
                 <p className="text-white">

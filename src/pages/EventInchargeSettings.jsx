@@ -1,13 +1,13 @@
 import React from 'react'
-import ProfileNav from '../Components/Profile-Navbar/ProfileNav';
 import EventInchargeSidebar from './EventInchargeSidebar';
 import ProfileSetting from '../Components/ProfileSetting/ProfileSetting';
+import EventInchargeNavbar from '../Components/Profile-Navbar/EventInchargeNavbar';
 
 const EventInchargeSettings = () => {
     return (
         <div className=" bg-gradient-to-b from-black via-purple-900 to-black flex flex-col justify-center w-screen h-full ">
           <div className="navbar w-full sm:hidden">
-            <ProfileNav />
+           <EventInchargeNavbar/>
           </div>
           <div className=" flex justify-center w-full h-full">
             <div className="w-[20%] hidden sm:flex h-screen">

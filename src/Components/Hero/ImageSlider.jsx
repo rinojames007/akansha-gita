@@ -23,7 +23,7 @@ const ImageSlider = ({ images }) => {
   }, [currentIndex]);
 
   return (
-    <div className="relative shadow-sm shadow-black border w-[93%] sm:w-[95%] h-[200px] sm:h-[300px] md:h-[450px] overflow-hidden rounded-xl mx-auto">
+    <div className="relative shadow-lg shadow-blue-600 border w-[93%] sm:w-[95%] h-[200px] sm:h-[300px] md:h-[450px] overflow-hidden rounded-xl mx-auto">
   {images.map((image, index) => (
     <div
       key={index}

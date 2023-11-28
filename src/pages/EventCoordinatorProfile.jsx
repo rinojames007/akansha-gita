@@ -1,14 +1,14 @@
 import React from 'react'
-import ProfileNav from '../Components/Profile-Navbar/ProfileNav';
 import EventCoordinatorSidebar from './EventCoordinatorSidebar';
 import { Link } from 'react-router-dom';
 import EventCard from '../Components/Events/EventCard';
+import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
 
 const EventCoordinatorProfile = () => {
     return (
         <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
           <div className="phone-nav md:hidden">
-            <ProfileNav />
+           <EventCoordinatorNavbar/>
           </div>
           <div className="Organiser-Profile-page w-full h-full flex justify-center">
             <div className="nav  hidden md:flex md:w-[20%]">
