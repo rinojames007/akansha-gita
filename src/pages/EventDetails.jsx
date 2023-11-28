@@ -4,10 +4,10 @@ import React from "react";
 
 const EventDetails = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
       <Navbar />
       <div className=" pt-[60px] h-full">
-        <div className="container flex flex-col md:flex-row">
+        <div className=" flex flex-col md:flex-row">
           <div className="left md:w-[50%] md:p-6 p-2">
             <img
               src="./Demo-pics/Robo-wars.webp"
@@ -24,9 +24,9 @@ const EventDetails = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam eos incidunt ullam cumque perferendis sapiente.
               </p>
-              <div className="rules">
-                <p className=" text-white font-semibold text-2xl">Rules</p>
-                <ul className="text-slate-300 text-sm md:text-lg list-disc">
+              <div className="rules px-2 ">
+                <p className=" text-white mx-auto font-semibold text-2xl">Rules</p>
+                <ul className="text-slate-300 mx-auto text-sm md:text-lg list-disc">
                   <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                   <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                   <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
@@ -47,32 +47,32 @@ const EventDetails = () => {
                   Time: <span className="text-slate-300 text-sm">9:30 AM</span>
                 </p>
               </div>
-              <div className="event-Incharge flex flex-col md:flex-row flex-wrap space-y-3 md:space-y-0 md:space-x-4">
-                <div className="container-Teachers">
-                  <h1 className="text-white font-semibold md:text-xl">
+              <div className="event-Incharge flex  flex-wrap justify-around space-x-4">
+                <div className="container-Teachers pt-3">
+                  <h1 className="text-white font-semibold md:text-lg">
                     Event Incharge
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white text-sm">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                   </div>
                 </div>
-                <div className="container-Teachers">
-                  <h1 className="text-white font-semibold md:text-xl">
+                <div className="container-Coordinator pt-3">
+                  <h1 className="text-white font-semibold text-lg">
                     Event Coordinator
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white text-sm">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                   </div>
                 </div>
-                <div className="container-Coordinator">
-                  <h1 className="text-white font-semibold md:text-xl">
+                <div className="container-Coordinator pt-3">
+                  <h1 className="text-white font-semibold text-lg">
                     Event Volunteer
                   </h1>
-                  <div className="container flex flex-col  text-white md:text-lg">
+                  <div className=" flex flex-col  text-white text-sm">
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>
                     <p>Rohan Das</p>

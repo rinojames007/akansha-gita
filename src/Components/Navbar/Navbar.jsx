@@ -27,22 +27,22 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline hover:text-gray-400 hover:cursor-pointer flex justify-center items-center">
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link
               to="/profile"
-              className="flex justify-start items-center px-2"
+              
             >
-              <span className="hidden md:inline text-white">Profile</span>
+              Profile
             </Link>
           </li>
-          <li className="hover:underline text-white hover:text-gray-400 hover:cursor-pointer">
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/about">
            About
            </Link>
           </li>
           
-          <li className="hover:underline text-white hover:text-gray-400 hover:cursor-pointer">
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/coordinators">
             Coordinators
@@ -52,7 +52,7 @@ const Navbar = () => {
           <li className="flex justify-center text-white items-center">
             <Link
               to="/login"
-              className="mx-auto px-3 flex text-white justify-center font-bold border-slate-600 border-2 rounded-2xl  hover:bg-slate-800 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
+              className="mx-auto px-3 flex text-white justify-center font-bold border-slate-400 border-2 rounded-2xl  hover:bg-purple-900 hover:shadow-lg hover:shadow-blue-500 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
             >
               <button className="px-1 py-2 text-center ">Login/Signup</button>
             </Link>

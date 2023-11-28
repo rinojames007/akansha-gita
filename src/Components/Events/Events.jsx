@@ -4,7 +4,7 @@ import EventCard from "./EventCard";
 
 const Events = () => {
   return (
-    <div className=" py-[50px] flex flex-col justify-center items-center">
+    <div className=" pt-[50px] flex flex-col justify-center items-center">
       <div className="heading flex flex-col justify-center items-center">
         <h1 className="text-2xl sm:text-4xl font-bold text-white">
           Experience the Best of{" "}
@@ -14,7 +14,7 @@ const Events = () => {
           Explore various events, workshops, competitions and much more.
         </p>
       </div>
-      <div className="container flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
+      <div className=" flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
         <Link to="/ahwan" className=" w-[95%] sm:w-[30%]">
           <EventCard name="Ahwan" url={"./Demo-pics/sports.jpg"} />
         </Link>

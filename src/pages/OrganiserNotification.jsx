@@ -1,9 +1,9 @@
-import Sidebar from "../Components/Profile-Sidebar/Sidebar";
+import React from "react";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
 import Alert from "../Components/Notification/Alert";
-// import { useState } from "react";
+import OrganiserSidebar from "../Components/Profile-Sidebar/OrganiserSidebar";
 
-export default function Notification() {
+const OrganiserNotification = () => {
   return (
     <div className=" flex flex-col justify-center w-screen h-full bg-gradient-to-b from-black via-purple-900 to-black">
       <div className="navbar w-full sm:hidden">
@@ -11,7 +11,7 @@ export default function Notification() {
       </div>
       <div className=" flex justify-center w-full h-full">
         <div className="w-[20%] hidden sm:flex h-screen">
-          <Sidebar />
+          <OrganiserSidebar />
         </div>
         <div className="hero sm:w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
           <p className="text-3xl font-bold text-white">Notification page....</p>
@@ -26,4 +26,6 @@ export default function Notification() {
       </div>
     </div>
   );
-}
+};
+
+export default OrganiserNotification;
