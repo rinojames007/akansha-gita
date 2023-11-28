@@ -14,7 +14,7 @@ const OrganiserProfile = () => {
       </div>
       <div className="Organiser-Profile-page w-full h-full flex justify-center">
         <div className="nav  hidden md:flex md:w-[20%]">
-        <OrganiserSidebar/>
+          <OrganiserSidebar />
         </div>
         <div className="profile md:w-[80%] flex flex-col py-[60px]">
           <h1 className="text-white font-bold text-center md:text-5xl text-3xl underline underline-offset-8">
@@ -29,7 +29,7 @@ const OrganiserProfile = () => {
                 <Link to="/ahwanWinners" className=" w-[95%] sm:w-[30%]">
                   <EventCard name="Ahwan" url={"./Demo-pics/sports.jpg"} />
                 </Link>
-                
+
                 <Link to="/anweshWinners" className=" w-[95%] sm:w-[30%]">
                   <EventCard name="Anwesh" url={"./Demo-pics/tech.jpg"} />
                 </Link>
@@ -38,7 +38,6 @@ const OrganiserProfile = () => {
                   <EventCard name="Akanksha" url={"./Demo-pics/cultural.jpg"} />
                 </Link>
               </div>
-              
             </div>
           </div>
         </div>

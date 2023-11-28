@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <div style={{ backgroundImage: `url(./Demo-pics/cultural.jpg)` }} className="flex justify-center items-center bg-no-repeat bg-cover bg-center  h-screen w-full ">
       {/* left-contents */}
