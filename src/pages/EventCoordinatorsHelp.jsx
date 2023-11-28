@@ -1,5 +1,5 @@
 import React from 'react'
-import EventCoordinatorSidebar from './EventCoordinatorSidebar';
+import EventCoordinatorSidebar from '../Components/Profile-Sidebar/EventCoordinatorSidebar';
 import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
 
 const EventCoordinatorsHelp = () => {

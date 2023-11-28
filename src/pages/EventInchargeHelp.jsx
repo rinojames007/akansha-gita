@@ -1,5 +1,5 @@
 import React from 'react'
-import EventInchargeSidebar from './EventInchargeSidebar';
+import EventInchargeSidebar from '../Components/Profile-Sidebar/EventInchargeSidebar';
 import EventInchargeNavbar from '../Components/Profile-Navbar/EventInchargeNavbar';
 
 const EventInchargeHelp = () => {

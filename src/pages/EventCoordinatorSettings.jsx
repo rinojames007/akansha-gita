@@ -1,6 +1,5 @@
 import React from 'react'
-
-import EventCoordinatorSidebar from './EventCoordinatorSidebar';
+import EventCoordinatorSidebar from '../Components/Profile-Sidebar/EventCoordinatorSidebar';
 import ProfileSetting from '../Components/ProfileSetting/ProfileSetting';
 import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import EventInchargeSidebar from './EventInchargeSidebar';
 import ProfileSetting from '../Components/ProfileSetting/ProfileSetting';
 import EventInchargeNavbar from '../Components/Profile-Navbar/EventInchargeNavbar';
+import EventInchargeSidebar from '../Components/Profile-Sidebar/EventInchargeSidebar';
 
 const EventInchargeSettings = () => {
     return (

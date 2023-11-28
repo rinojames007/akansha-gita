@@ -1,6 +1,6 @@
 import React from 'react'
 
-import EventCoordinatorSidebar from './EventCoordinatorSidebar';
+import EventCoordinatorSidebar from '../Components/Profile-Sidebar/EventCoordinatorSidebar';
 import Alert from "../Components/Notification/Alert";
 import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
 

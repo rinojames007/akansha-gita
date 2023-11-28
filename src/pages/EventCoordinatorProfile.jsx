@@ -1,8 +1,8 @@
 import React from 'react'
-import EventCoordinatorSidebar from './EventCoordinatorSidebar';
 import { Link } from 'react-router-dom';
 import EventCard from '../Components/Events/EventCard';
 import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
+import EventCoordinatorSidebar from '../Components/Profile-Sidebar/EventCoordinatorSidebar';
 
 const EventCoordinatorProfile = () => {
     return (

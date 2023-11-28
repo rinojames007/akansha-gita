@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import EventInchargeSidebar from "./EventInchargeSidebar";
 import EventCard from "../Components/Events/EventCard";
 import EventInchargeNavbar from "../Components/Profile-Navbar/EventInchargeNavbar";
 import WinnerDisplay from "../Components/Winners/WinnerDisplay";
+import EventInchargeSidebar from "../Components/Profile-Sidebar/EventInchargeSidebar";
 const EventInchargeProfile = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen">

@@ -11,7 +11,7 @@ const OrganiserProfile = () => {
         <OrganiserProfileNavbar/>
       </div>
       <div className="Organiser-Profile-page w-full h-full flex justify-center">
-        <div className="nav  hidden md:flex md:w-[20%]">
+        <div className="nav  hidden md:flex min-h-screen md:w-[20%]">
           <OrganiserSidebar />
         </div>
         <div className="profile md:w-[80%] flex flex-col py-[60px]">
