@@ -36,16 +36,10 @@ export default function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/organiserSettings" element={<OrganiserSetting/>}/>
         <Route path="/notifications" element={<Notification />} />
-<<<<<<< HEAD
         <Route path="/organiserNotifications" element={<OrganiserNotification/>}/>
         <Route path="/anwesh" element={<Anwesh/>}/>
         <Route path="/ahwan" element={<Ahwan/>}/>
         <Route path="/akanksha" element={<Akanksha/>}/>
-=======
-        <Route path="/anwesh" element={<Anwesh />} />
-        <Route path="/ahwan" element={<Ahwan />} />
-        <Route path="/akanksha" element={<Akanksha />} />
->>>>>>> main
         <Route path="/help" element={<Help />} />
         <Route path="/organiserHelp" element={<OrganiserHelp/>} />
         <Route path="/anweshWinners" element={<AnweshWinnerPage/>} />

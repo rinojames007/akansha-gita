@@ -2,13 +2,8 @@ import React from "react";
 import Sidebar from "../Components/Profile-Sidebar/Sidebar";
 
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-<<<<<<< HEAD
 
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
-=======
-// import EventBox from "../Components/Event-box/EventBox";
-import SmallEventBox from "../Components/Event-box/SmallEventBox";
->>>>>>> main
 
 function Profile() {
   return (
@@ -63,17 +58,3 @@ function Profile() {
 }
 
 export default Profile;
-<<<<<<< HEAD
-=======
-
-
-  /* <Carousel
-                  cards={cards}
-                  height="400px"
-                  width="50%"
-                  margin="0 auto"
-                  offset={2}
-                  showArrows={false}
-                /> */
-
->>>>>>> main
