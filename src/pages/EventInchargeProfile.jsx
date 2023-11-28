@@ -60,6 +60,13 @@ const EventInchargeProfile = () => {
           <div className=" py-2 md:py-[60px]">
             <WinnerDisplay />
           </div>
+          <div className="driveLink flex justify-center items-center space-x-2 flex-wrap">
+            <p className="text-white font-bold text-2xl">Drive Link: </p>
+            <input
+              type="text"
+              className="w-[80%] md:w-[40%] rounded-md  outline-none px-2"
+            />
+          </div>
         </div>
       </div>
     </div>
