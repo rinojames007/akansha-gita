@@ -1,14 +1,13 @@
 import React from 'react'
-import ProfileNav from '../Components/Profile-Navbar/ProfileNav';
-import EventInchargeSidebar from './EventInchargeSidebar';
-import EventCoordinatorSidebar from './EventCoordinatorSidebar';
+import EventCoordinatorSidebar from '../Components/Profile-Sidebar/EventCoordinatorSidebar';
+import EventCoordinatorNavbar from '../Components/Profile-Navbar/EventCoordinatorNavbar';
 
 const EventCoordinatorsHelp = () => {
     return (
         <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
           <div className=" flex flex-col justify-center w-screen h-full ">
             <div className="navbar w-full sm:hidden">
-              <ProfileNav /> 
+              <EventCoordinatorNavbar/>
               
             </div>
             <div className=" flex justify-center w-full h-full">

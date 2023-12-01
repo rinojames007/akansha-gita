@@ -1,18 +1,19 @@
 import React from 'react'
-import EventInchargeSidebar from '../Components/Profile-Sidebar/EventInchargeSidebar';
+import HelpSupportNavbar from '../Components/Profile-Navbar/HelpSupportNavbar';
+import HelpSupportSidebar from '../Components/Profile-Sidebar/HelpSupportSidebar';
 import Alert from "../Components/Notification/Alert";
-import EventInchargeNavbar from '../Components/Profile-Navbar/EventInchargeNavbar';
 
-const EventInchargeNotifications = () => {
+
+const HelpSupportNotification = () => {
     return (
         <div className=" flex flex-col justify-center w-screen h-full bg-gradient-to-b from-black via-purple-900 to-black">
           <div className="navbar w-full sm:hidden">
-            <EventInchargeNavbar/>
+            <HelpSupportNavbar/>
             
           </div>
           <div className=" flex justify-center w-full h-full">
             <div className="w-[20%] hidden sm:flex h-screen">
-              <EventInchargeSidebar/>
+              <HelpSupportSidebar/>
             </div>
             <div className="hero sm:w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
               <p className="text-3xl font-bold text-white">Notification page....</p>
@@ -29,4 +30,4 @@ const EventInchargeNotifications = () => {
       );
 }
 
-export default EventInchargeNotifications
+export default HelpSupportNotification

@@ -13,7 +13,7 @@ function Profile() {
           <ProfileNav />
         </div>
         <div className=" flex mx-auto w-full h-full">
-          <div className="sidebar hidden md:flex md:w-[20%] h-full">
+          <div className="sidebar hidden min-h-screen md:flex md:w-[20%] ">
             <Sidebar />
           </div>
 

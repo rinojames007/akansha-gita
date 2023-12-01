@@ -33,14 +33,18 @@ const EventDetails = () => {
                   <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                 </ul>
               </div>
-              <div className="prizes flex items-center space-x-2 text-white">
-                <p className="text-xl flex ">
-                  Prize: <span className="text-slate-200 text-lg">5000</span>
+              <div className="prizes-timmings space-x-3 items-center justify-center flex flex-wrap text-white">
+                
+                <p className="text-xl ">
+                  Prize: <span className="text-slate-300 text-sm ml-1">5000</span>
+                </p>
+                <p className="text-xl  ">
+                  Venue: <span className="text-slate-300 text-sm ml-1">Lab 10 (Main Building)</span>
                 </p>
               </div>
-              <div className="timmings flex space-x-3">
+              <div className="timmings flex space-x-3 justify-around flex-wrap">
                 <p className="text-white">
-                  Date:{" "}
+                  Date:
                   <span className="text-slate-300 text-sm">4/02/2024</span>
                 </p>
                 <p className="text-white">
@@ -81,7 +85,7 @@ const EventDetails = () => {
               </div>
               <Link
             to='/register'
-            class="flex items-center w-[200px] justify-center py-3 text-lg font-medium text-center text-white hover:scale-90 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="flex items-center w-[200px] justify-center py-3 my-2 md:my-5 text-lg font-medium text-center text-white hover:scale-90 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
            Register
             

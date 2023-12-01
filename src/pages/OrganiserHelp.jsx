@@ -1,14 +1,12 @@
 import React from "react";
-
-import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-
 import OrganiserSidebar from "../Components/Profile-Sidebar/OrganiserSidebar";
+import OrganiserProfileNavbar from "../Components/Profile-Navbar/OrganiserProfileNavbar";
 const OrganiserHelp = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
       <div className=" flex flex-col justify-center w-screen h-full ">
         <div className="navbar w-full sm:hidden">
-          <ProfileNav />
+        <OrganiserProfileNavbar/>
         </div>
         <div className=" flex justify-center w-full h-full">
           <div className="w-[20%] hidden sm:flex h-screen">
