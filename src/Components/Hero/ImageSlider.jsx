@@ -1,27 +1,36 @@
-// src/components/ImageSlider.js
-import React, { useState, useEffect } from 'react';
+import SimpleImageSlider from "react-simple-image-slider";
 
+const images = [
+  {
+    url: "./Demo-pics/Template.jpeg",
+  },
+  {
+    url: "./Demo-pics/College-logo.jpg",
+  },
+  {
+    url: "./Demo-pics/College-lighting.jpeg",
+  },
+  {
+    url: "./Demo-pics/face-paint.jpeg",
+  },
+  {
+    url: "./Demo-pics/College-fest.jpeg",
+  },
+  {
+    url: "./image-slider/01_img.jpeg",
+  },
+  {
+    url: "./image-slider/02_img.jpeg",
+  },
+  {
+    url: "./image-slider/03_img.jpeg",
+  },
+  {
+    url: "./image-slider/04_img.jpeg",
+  },
+];
 
-const ImageSlider = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
-  // Automatic sliding
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 3000); // Change slide every 5 seconds (adjust as needed)
-
-    return () => clearInterval(intervalId); // Cleanup on component unmount
-  }, [currentIndex]);
-
+const ImageSlider = () => {
   return (
     <div className="relative shadow-lg shadow-blue-600 border w-[93%] sm:w-[95%] h-[200px] sm:h-[300px] md:h-[450px] overflow-hidden rounded-xl mx-auto">
   {images.map((image, index) => (
@@ -52,7 +61,6 @@ const ImageSlider = ({ images }) => {
     <img src="./slider-arrow/right-arrow.png" alt="right-arrow" className="px-3 w-full h-6 py-2 bg-white rounded-full " />
   </button>
 </div>
-
   );
 };
 
