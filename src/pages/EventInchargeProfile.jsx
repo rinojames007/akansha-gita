@@ -23,11 +23,20 @@ const EventInchargeProfile = () => {
               <EventCard name="Event Details" url={"./Demo-pics/tech.jpg"} />
             </Link>
           </div>
-          <div className="winner md:px-6 px-2 w-full">
+          <div className="items-required flex flex-col justify-center items-center">
+            <h1 className="text-2xl text-white font-bold">Items Required</h1>
+            <ul className="text-white font-semibold list-disc">
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+          </div>
+          <div className="winner md:px-6 mx-auto px-2 w-full">
             <h1 className="text-white font-bold text-center text-3xl my-9">
               Finalise the Winners:
             </h1>
-            <div className="space-y-5">
+            <div className="space-y-5 mx-auto">
               <div className="first-position flex space-x-3 ">
                 <h1 className="font-bold text-xl text-white">
                   1 <sup>st</sup> :

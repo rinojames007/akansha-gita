@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { IoHelp } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
@@ -21,6 +23,11 @@ const EventInchargeSidebar = () => {
         title="Profile Settings"
         icon={<CgProfile />}
         link="/eventInchargeSettings"
+      />
+      <SideNavElements
+        title="Update Event-Details"
+        icon={<FontAwesomeIcon icon={faGear} />}
+        link="/inputEventDetails"
       />
       <SideNavElements
         title="Notification Center"

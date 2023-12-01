@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useMemo } from "react";
 
-const EventInchargeNavbar = () => {
+const HelpSupportNavbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     // Function to toggle the mobile menu
@@ -20,28 +20,14 @@ const EventInchargeNavbar = () => {
           {
             title: "Dashboard",
       
-            link: "/eventInchargeProfile",
+            link: "/helpSupportProfile",
           },
-          {
-            title: "Profile Settings",
-      
-            link: "/eventInchargeSettings",
-          },
-          {
-            title: "Update Event-Details",
-      
-            link: "/inputEventDetails",
-          },
+          
           {
             title: "Notification Center",
       
-            link: "/eventInchargeNotifications",
-          },
-          {
-            title: "Help and support",
-      
-            link: "/eventInchargeHelp",
-          },
+            link: "/helpSupportNotifications",
+          }
     ]);
   
     return (
@@ -50,7 +36,7 @@ const EventInchargeNavbar = () => {
         <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
           <Link to="/" className="h-full w-full">
           <div
-            style={{ backgroundImage: `url(./Demo-pics/cultural.webp)` }}
+            style={{ backgroundImage: `url(./Demo-pics/cultural.jpg)` }}
             className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
           >
             <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
@@ -121,4 +107,4 @@ const EventInchargeNavbar = () => {
     );
 }
 
-export default EventInchargeNavbar
+export default HelpSupportNavbar

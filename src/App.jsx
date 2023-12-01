@@ -29,6 +29,11 @@ import EventCoordinatorProfile from "./pages/EventCoordinatorProfile";
 import EventCoordinatorSettings from "./pages/EventCoordinatorSettings";
 import EventCoordinatorsNotifications from "./pages/EventCoordinatorsNotifications";
 import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
+import InputEventDetails from "./pages/InputEventDetails";
+import HelpSupportProfile from "./pages/HelpSupportProfile";
+import HelpSupportSettings from "./pages/HelpSupportSettings";
+import HelpSupportNotification from "./pages/HelpSupportNotification";
+import EventParticipants from "./pages/EventParticipants";
 
 export default function App() {
   return (
@@ -64,7 +69,11 @@ export default function App() {
         <Route path="/eventCoordinatorSettings" element={<EventCoordinatorSettings/>} />
         <Route path="/eventCoordinatorNotifications" element={<EventCoordinatorsNotifications/>} />
         <Route path="/eventCoordinatorHelp" element={<EventCoordinatorsHelp/>} />
-
+        <Route path="/inputEventDetails" element={<InputEventDetails/>}/>
+        <Route path="/helpSupportProfile" element={<HelpSupportProfile/>} />
+        <Route path="/helpSupportSettings" element={<HelpSupportSettings/>} />
+        <Route path="/helpSupportNotifications" element={<HelpSupportNotification/>} />
+        <Route path="/eventParticipants" element={<EventParticipants/>}/>
       </Routes>
     </BrowserRouter>
   );
