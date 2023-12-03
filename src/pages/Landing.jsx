@@ -6,15 +6,15 @@ import Highlights from "../Components/Highlights/Highlights";
 import Navbar from "../Components/Navbar/Navbar";
 export default function Landing() {
   return (
-    <>
-      <body className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
+    
+      <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
         <Navbar />
         <Hero />
         <Events />
         <EventUpdates />
         <Highlights />
         <Footer />
-      </body>
-    </>
+      </div>
+    
   );
 }
