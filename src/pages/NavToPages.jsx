@@ -27,7 +27,7 @@ const NavToPages = () => {
               className="hover:text-gray-400 active:underline py-1"
               to="/organiserProfile"
             >
-              Event Organiser Profile
+              Organiser Profile
             </Link>
           </li>
           <li>
@@ -35,7 +35,7 @@ const NavToPages = () => {
               className="hover:text-gray-400 active:underline py-1"
               to="/HelpSupportProfile"
             >
-              Help & Support Profile
+              Help & Support Team Profile
             </Link>
           </li>
         </ul>
