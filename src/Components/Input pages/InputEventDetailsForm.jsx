@@ -14,7 +14,7 @@ const InputEventDetailsForm = () => {
             </label>
             <input
               type="text"
-              className="border-2 w-full md:w-[60%] rounded-sm outline-none text-black bg-slate-200 "
+              className="border-2 w-full md:w-[60%] h-[35px] rounded-sm outline-none text-black bg-slate-200 "
               name="EventName"
               placeholder="Event Name..."
               required
@@ -58,6 +58,34 @@ const InputEventDetailsForm = () => {
               </ul>
             </div>
           </div>
+
+
+          <div className="Event-Items-Required">
+            <div className="Event-Items-Required flex flex-col md:flex-row space-y-3 md:space-y-0 items-center md:space-x-4 text-white">
+              <label htmlFor="Event-Items-Required">
+                <span className="text-lg font-bold">Event Items Required:</span>
+              </label>
+              <input
+                type="text"
+                className="md:w-[50%] w-full h-[35px] rounded-md outline-none"
+                placeholder="Add Items-Required..."
+              />
+              <div
+                className="addBtn px-5 py-2 bg-slate-700 rounded-lg hover:scale-90 shadow-sm hover:cursor-pointer hover:shadow-blue-400 "
+                id="AddItems-Required"
+              >
+                <span className="font-semibold ">Add</span>
+              </div>
+            </div>
+            <div className="Items-Required-Display flex justify-center my-5">
+              <ul className="text-white list-disc">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+          </div>
+
           <div className="DAte-and-timmings flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between">
             <div className="timming space-x-2">
               <label htmlFor="Time" className="text-white text-xl font-bold">Timming:</label>
@@ -72,6 +100,12 @@ const InputEventDetailsForm = () => {
             <label htmlFor="Venue" className="text-white text-xl font-bold">Venue :</label>
             <input type="text" className="md:w-[50%] w-full h-[35px] rounded-md outline-none" placeholder="Venue..." />
           </div>
+
+          <div className="Event-Prize space-x-3 flex flex-col md:flex-row">
+            <label htmlFor="Prize" className="text-white text-xl font-bold">Prize :</label>
+            <input type="text" className="md:w-[50%] w-full h-[35px] rounded-md outline-none" placeholder="Prize..." />
+          </div>
+
           <input
             type="submit"
             id="submit"
