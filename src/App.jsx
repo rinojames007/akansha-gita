@@ -34,6 +34,7 @@ import HelpSupportProfile from "./pages/HelpSupportProfile";
 import HelpSupportSettings from "./pages/HelpSupportSettings";
 import HelpSupportNotification from "./pages/HelpSupportNotification";
 import EventParticipants from "./pages/EventParticipants";
+import NavToPages from "./pages/NavToPages";
 
 export default function App() {
   return (
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/helpSupportSettings" element={<HelpSupportSettings/>} />
         <Route path="/helpSupportNotifications" element={<HelpSupportNotification/>} />
         <Route path="/eventParticipants" element={<EventParticipants/>}/>
+        <Route path="/navToPages" element={<NavToPages/>}/>
       </Routes>
     </BrowserRouter>
   );
