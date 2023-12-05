@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 const InputEventDetailsForm = () => {
+  const [RulesInputValue, setRulesInputValue] = useState('');
+  const [RulesItems, setRulesItems] = useState([]);
+  const [ItemsInputValue, setItemsInputValue] = useState('');
+  const [ItemsList, setItemsList] = useState([]);
+
+  const getRules = ()=> {
+    setRulesItems([...RulesItems,RulesInputValue]);
+    setRulesInputValue("");
+  }
+
+  const displayRules = ()=>{
+    const RulesArr = RulesItems.map((item,index)=>(
+      <li key={index}> {item}</li>
+    ));
+
+    return RulesArr;
+  }
+
+  const getItemsNeeded = ()=>{
+    setItemsList([...ItemsList,ItemsInputValue]);
+    setItemsInputValue("");
+  }
+
+  const displayItemsNeeded = ()=>{
+    const ItemNeededArr = ItemsList.map((item,index)=>(
+      <li key={index}> {item}</li>
+    ))
+    return ItemNeededArr;
+  }
+
+
   return (
     <div className="py-8">
       <h1 className="md:text-5xl text-3xl  font-bold text-center py-4  text-white">
@@ -40,21 +71,24 @@ const InputEventDetailsForm = () => {
               </label>
               <input
                 type="text"
-                className="md:w-[50%] w-full h-[35px] rounded-md outline-none"
+                className="md:w-[50%] w-full h-[35px] rounded-md outline-none text-black"
                 placeholder="Add Rules..."
+                value={RulesInputValue}
+                onChange={(e)=> setRulesInputValue(e.target.value)}
+                id="RulesText"
               />
               <div
-                className="addBtn px-5 py-2 bg-slate-700 rounded-lg hover:scale-90 shadow-sm hover:cursor-pointer hover:shadow-blue-400 "
+                className="addBtn px-5 py-2 bg-slate-800 rounded-lg hover:scale-90 shadow-sm hover:cursor-pointer hover:shadow-blue-400 "
                 id="AddRule"
+                onClick={getRules}
               >
                 <span className="font-semibold ">Add</span>
               </div>
             </div>
             <div className="Rules-Display flex justify-center my-5">
+              
               <ul className="text-white list-disc">
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
+                {displayRules()}
               </ul>
             </div>
           </div>
@@ -67,21 +101,25 @@ const InputEventDetailsForm = () => {
               </label>
               <input
                 type="text"
-                className="md:w-[50%] w-full h-[35px] rounded-md outline-none"
+                className="md:w-[50%] w-full h-[35px] rounded-md outline-none text-black"
                 placeholder="Add Items-Required..."
+                id="ItemsText"
+                value={ItemsInputValue}
+                onChange={(e)=>{
+                  setItemsInputValue(e.target.value);
+                }}
               />
               <div
-                className="addBtn px-5 py-2 bg-slate-700 rounded-lg hover:scale-90 shadow-sm hover:cursor-pointer hover:shadow-blue-400 "
+                className="addBtn px-5 py-2 bg-slate-800 rounded-lg hover:scale-90 shadow-sm hover:cursor-pointer hover:shadow-blue-400 "
                 id="AddItems-Required"
+                onClick={getItemsNeeded}
               >
                 <span className="font-semibold ">Add</span>
               </div>
             </div>
             <div className="Items-Required-Display flex justify-center my-5">
               <ul className="text-white list-disc">
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
+                {displayItemsNeeded()}
               </ul>
             </div>
           </div>
@@ -92,7 +130,7 @@ const InputEventDetailsForm = () => {
               <input type="time" className="w-[100px]" />
             </div>
             <div className="date space-x-2">
-              <label htmlFor="Date" className="text-white text-xl font-bold">DAte :</label>
+              <label htmlFor="Date" className="text-white text-xl font-bold">Date :</label>
               <input type="date" />
             </div>
           </div>
