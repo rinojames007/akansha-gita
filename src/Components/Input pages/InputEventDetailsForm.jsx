@@ -45,7 +45,7 @@ const InputEventDetailsForm = () => {
             </label>
             <input
               type="text"
-              className="border-2 w-full md:w-[60%] h-[35px] rounded-sm outline-none text-black bg-slate-200 "
+              className="border-2 px-2 w-full md:w-[60%] h-[35px] rounded-sm outline-none text-black bg-slate-200 "
               name="EventName"
               placeholder="Event Name..."
               required
@@ -59,7 +59,7 @@ const InputEventDetailsForm = () => {
               name="EventDesc"
               rows="6"
               cols="50"
-              className="border-2 w-[95%] md:w-[50%] rounded-sm outline-none text-black bg-slate-200 "
+              className="border-2 px-2 w-[95%] md:w-[50%] rounded-sm outline-none text-black bg-slate-200 "
               placeholder="Event Description..."
               required
             />
@@ -71,7 +71,7 @@ const InputEventDetailsForm = () => {
               </label>
               <input
                 type="text"
-                className="md:w-[50%] w-full h-[35px] rounded-md outline-none text-black"
+                className="md:w-[50%] w-full h-[35px] rounded-md px-2 outline-none text-black"
                 placeholder="Add Rules..."
                 value={RulesInputValue}
                 onChange={(e)=> setRulesInputValue(e.target.value)}
@@ -101,7 +101,7 @@ const InputEventDetailsForm = () => {
               </label>
               <input
                 type="text"
-                className="md:w-[50%] w-full h-[35px] rounded-md outline-none text-black"
+                className="md:w-[50%] w-full h-[35px] px-2 rounded-md outline-none text-black"
                 placeholder="Add Items-Required..."
                 id="ItemsText"
                 value={ItemsInputValue}
@@ -127,21 +127,21 @@ const InputEventDetailsForm = () => {
           <div className="DAte-and-timmings flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between">
             <div className="timming space-x-2">
               <label htmlFor="Time" className="text-white text-xl font-bold">Timming:</label>
-              <input type="time" className="w-[100px]" />
+              <input type="time" className="w-[100px] px-2" />
             </div>
             <div className="date space-x-2">
               <label htmlFor="Date" className="text-white text-xl font-bold">Date :</label>
-              <input type="date" />
+              <input type="date" className="px-2"/>
             </div>
           </div>
           <div className="Event-Venue space-x-3 flex flex-col md:flex-row">
             <label htmlFor="Venue" className="text-white text-xl font-bold">Venue :</label>
-            <input type="text" className="md:w-[50%] w-full h-[35px] rounded-md outline-none" placeholder="Venue..." />
+            <input type="text" className="md:w-[50%] px-2 w-full h-[35px] rounded-md outline-none" placeholder="Venue..." />
           </div>
 
           <div className="Event-Prize space-x-3 flex flex-col md:flex-row">
             <label htmlFor="Prize" className="text-white text-xl font-bold">Prize :</label>
-            <input type="text" className="md:w-[50%] w-full h-[35px] rounded-md outline-none" placeholder="Prize..." />
+            <input type="text" className="md:w-[50%] px-2 w-full h-[35px] rounded-md outline-none" placeholder="Prize..." />
           </div>
 
           <input
