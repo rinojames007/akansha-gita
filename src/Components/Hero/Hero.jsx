@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="left w-full mx-auto flex justify-center items-center ">
         <div className=" flex flex-col items-center justify-center ">
           <div className="header text-center ">
-            <h1 className=" text-2xl sm:text-6xl font-bold text-white">
+            <h1 className=" text-2xl sm:text-6xl font-bold text-white ">
               Welcome Back
             </h1>
             <span className=" text-4xl sm:text-8xl font-bold text-white">Akanksha 2024!</span>
