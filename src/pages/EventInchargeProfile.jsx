@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import EventCard from "../Components/Events/EventCard";
 import EventInchargeNavbar from "../Components/Profile-Navbar/EventInchargeNavbar";
 import WinnerDisplay from "../Components/Winners/WinnerDisplay";
 import EventInchargeSidebar from "../Components/Profile-Sidebar/EventInchargeSidebar";
 const EventInchargeProfile = () => {
+  const [first, setfirst] = useState("");
+  const [second, setsecond] = useState("");
+  const [third, setthird] = useState("");
+  const [firstPos, setfirstPos] = useState("");
+  const [secondPos, setsecondPos] = useState("");
+  const [thirdPos, setthirdPos] = useState("");
+
+  const FirstPosition = () => {
+    setfirstPos(first);
+    setfirst("");
+  };
+
+  const SecondPosition = () => {
+    setsecondPos(second);
+    setsecond("");
+  };
+
+  const ThirdPosition = () => {
+    setthirdPos(third);
+    setthird("");
+  };
+
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen">
       <div className="phone-nav md:hidden">
@@ -23,15 +45,7 @@ const EventInchargeProfile = () => {
               <EventCard name="Event Details" url={"./Demo-pics/tech.jpg"} />
             </Link>
           </div>
-          <div className="items-required flex flex-col justify-center items-center">
-            <h1 className="text-2xl text-white font-bold">Items Required</h1>
-            <ul className="text-white font-semibold list-disc">
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-            </ul>
-          </div>
+          
           <div className="winner md:px-6 mx-auto px-2 w-full">
             <h1 className="text-white font-bold text-center text-3xl my-9">
               Finalise the Winners:
@@ -44,7 +58,17 @@ const EventInchargeProfile = () => {
                 <input
                   type="text"
                   className="w-[80%] md:w-[40%] rounded-md  outline-none px-2"
+                  value={first}
+                  onChange={(e) => {
+                    setfirst(e.target.value);
+                  }}
                 />
+                <button
+                  className="px-4 md:mx-3 py-2 bg-black rounded-lg font-semibold text-white"
+                  onClick={FirstPosition}
+                >
+                  ADD
+                </button>
               </div>
               <div className="Second-position flex space-x-3 ">
                 <h1 className="font-bold text-xl text-white">
@@ -53,7 +77,17 @@ const EventInchargeProfile = () => {
                 <input
                   type="text"
                   className="w-[75%] md:w-[40%] rounded-md  outline-none px-2"
+                  value={second}
+                  onChange={(e) => {
+                    setsecond(e.target.value);
+                  }}
                 />
+                <button
+                  className="px-4 md:mx-3 py-2 bg-black rounded-lg font-semibold text-white"
+                  onClick={SecondPosition}
+                >
+                  ADD
+                </button>
               </div>
               <div className="Third-position flex space-x-3 ">
                 <h1 className="font-bold text-xl text-white">
@@ -62,12 +96,26 @@ const EventInchargeProfile = () => {
                 <input
                   type="text"
                   className="w-[75%] md:w-[40%] rounded-md  outline-none px-2"
+                  value={third}
+                  onChange={(e) => {
+                    setthird(e.target.value);
+                  }}
                 />
+                <button
+                  className="px-4 md:mx-3 py-2 bg-black rounded-lg font-semibold text-white"
+                  onClick={ThirdPosition}
+                >
+                  ADD
+                </button>
               </div>
             </div>
           </div>
           <div className=" py-2 md:py-[60px]">
-            <WinnerDisplay />
+            <WinnerDisplay
+              first={firstPos}
+              second={secondPos}
+              third={thirdPos}
+            />
           </div>
           <div className="driveLink flex justify-center items-center space-x-2 flex-wrap">
             <p className="text-white font-bold text-2xl">Drive Link: </p>
