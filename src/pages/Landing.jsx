@@ -1,3 +1,4 @@
+import React from "react";
 import EventUpdates from "../Components/Events-updates/EventUpdates";
 import Events from "../Components/Events/Events";
 import Footer from "../Components/Footer/Footer";
