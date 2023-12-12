@@ -16,6 +16,6 @@ export default function Landing() {
         <Highlights />
         <Footer />
       </div>
-    
+
   );
 }
