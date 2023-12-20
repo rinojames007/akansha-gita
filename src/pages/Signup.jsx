@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Spinner } from "flowbite-react";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -16,8 +16,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-
-      const response = await axios.post("http://localhost:3000/user/signin", {
+      const response = await axios.post("http://localhost:3000/user/signup", {
         email: email,
         password: password,
       });
@@ -29,7 +28,6 @@ const Login = () => {
       navigate("/");
     }
   };
-
   return (
     <div className="w-full h-screen flex justify-center items-center bg-gradient-to-b from-black via-purple-900 to-black">
       <div className="w-full m-auto py-[100px] max-w-md">
@@ -60,25 +58,19 @@ const Login = () => {
             />
             {/* <p className="text-red-500 text-xs italic">Please choose a password.</p> */}
           </div>
-          <div className="mb-4 flex items-center justify-between">
+          <div className="mb-4 flex justify-center">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
               onClick={handleSubmit}
             >
-              {loading ? <Spinner /> : "Login"}
+              {loading ? <Spinner /> : "Signup"}
             </button>
-            <a
-              className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-              href="#"
-            >
-              Forgot Password?
-            </a>
           </div>
           <div className=" flex items-center justify-evenly">
-            Create account?{" "}
-            <Link to={"/signup"} className="font-bold text-blue-500" href="#">
-              SignUp
+            Already have an account?{" "}
+            <Link to={`/login`} className="font-bold text-blue-500" href="#">
+              Login
             </Link>
           </div>
         </form>
@@ -87,4 +79,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
