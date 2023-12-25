@@ -16,13 +16,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@material-tailwind/react": "^2.1.4",
-<<<<<<< HEAD
     "@prisma/client": "^5.7.1",
     "axios": "^1.6.2",
     "coffeescript": "^2.7.0",
     "flowbite-react": "^0.7.2",
-=======
->>>>>>> parent of e5b1279 (notifications implementation & backend integration)
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
