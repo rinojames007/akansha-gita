@@ -1,6 +1,6 @@
 import React from "react";
 
-const WinnerDisplay = () => {
+const WinnerDisplay = (props) => {
   return (
     <div className="h-full mx-auto">
       <h1 className="text-3xl font-bold text-center text-white">Winners:</h1>
@@ -10,25 +10,31 @@ const WinnerDisplay = () => {
             1 <sup>st</sup> :
           </h1>
           <p className=" text-sm md:text-xl font-semibold text-slate-200">
-            Aryan kumar Mohapatra
+            {props.first}
           </p>
+          
         </div>
+        
         <div className="Second-position  flex justify-center items-center space-x-3 bg-gray-900 py-2 px-4 rounded-xl ">
           <h1 className="font-bold text-2xl text-white">
             2 <sup>nd</sup> :
           </h1>
           <p className=" text-sm md:text-xl font-semibold text-slate-200">
-            Aryan kumar Mohapatra
+            {props.second}
           </p>
+          
         </div>
+        
         <div className="Third-position  flex justify-center items-center space-x-3 bg-gray-900 py-2 px-4 rounded-xl ">
           <h1 className="font-bold text-2xl text-white">
             3 <sup>rd</sup> :
           </h1>
           <p className=" text-sm md:text-xl font-semibold text-slate-200">
-            Aryan kumar Mohapatra
+            {props.third}
           </p>
+          
         </div>
+        
       </div>
     </div>
   );
