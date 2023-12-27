@@ -34,9 +34,6 @@ const InputEventDetailsForm = () => {
 
   return (
     <div className="py-8">
-      <h1 className="md:text-5xl text-3xl  font-bold text-center py-4  text-white">
-        Update Event Details
-      </h1>
       <div className=" h-full mx-auto border-2 rounded-xl md:p-6 md:w-[85%] w-[95%] ">
         <form action="#" className="flex flex-col space-y-9 p-3 mx-auto">
           <div className="Event Name flex items-center space-x-4 text-white">
