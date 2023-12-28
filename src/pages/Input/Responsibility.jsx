@@ -10,7 +10,7 @@ function Responsibility() {
            </Link>
         </div>
       <h1 className="flex justify-center items-center sm:text-5xl text-3xl font-bold text-white py-5">
-        Responsibility
+      Add Users
       </h1>
       <div className=" h-fit mx-auto border-2 rounded-xl md:p-6 md:w-[85%] w-[95%] ">
         <form action="" className="flex flex-col space-y-9 p-3 mx-auto">

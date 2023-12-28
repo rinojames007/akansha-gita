@@ -33,7 +33,7 @@ const NavToPages = () => {
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
-              to="/HelpSupportProfile"
+              to="/support/profile"
             >
               Help & Support Team Profile
             </Link>

@@ -42,8 +42,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
 
-import Responsibility from "./pages/Input pages/Responsibility";
-import InputEventDetailsForm from "./pages/Input pages/InputEventDetailsForm";
+import Responsibility from "./pages/Input/Responsibility";
+import InputEventDetailsForm from "./pages/Input/InputEventDetailsForm";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -142,8 +142,6 @@ export default function App() {
                     path="/eventCoordinatorHelp"
                     element={<EventCoordinatorsHelp />}
                 />
-                <Route path="/helpSupportProfile" element={<HelpSupportProfile />} />
-                <Route path="/helpSupportSettings" element={<HelpSupportSettings />} />
                 <Route
                     path="/helpSupportNotifications"
                     element={<HelpSupportNotification />}
@@ -155,8 +153,11 @@ export default function App() {
 
                 {/*help and support routes*/}
                 <Route path="/support/login" element={<SupportLogin />} />
-                <Route path="/support/add" element={<SupportLogin />} />
+                <Route path="/support/add" element={<Responsibility />} />
                 <Route path="/support/event" element={<InputEventDetailsForm />} />
+                <Route path="/support/profile" element={<HelpSupportProfile />} />
+                <Route path="/support/settings" element={<HelpSupportSettings />} />
+                <Route path="/support/notifications" element={<HelpSupportNotification />} />
 
             </Routes>
         </BrowserRouter>
