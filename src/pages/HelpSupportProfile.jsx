@@ -25,15 +25,15 @@ const HelpSupportProfile = () => {
                         <div className="event-winners flex justify-around flex-wrap">
                             <div className=" flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
                                 <Link to="/ahwanWinners" className=" w-[95%] sm:w-[30%]">
-                                    <EventCard name="Ahwan" url={"./Demo-pics/sports.jpg"} />
+                                    <EventCard name="Ahwan" url={"/Demo-pics/sports.jpg"} />
                                 </Link>
 
                                 <Link to="/anweshWinners" className=" w-[95%] sm:w-[30%]">
-                                    <EventCard name="Anwesh" url={"./Demo-pics/tech.jpg"} />
+                                    <EventCard name="Anwesh" url={"/Demo-pics/tech.jpg"} />
                                 </Link>
 
                                 <Link to="/akankshaWinners" className=" w-[95%] sm:w-[30%]">
-                                    <EventCard name="Akanksha" url={"./Demo-pics/cultural.webp"} />
+                                    <EventCard name="Akanksha" url={"/Demo-pics/cultural.webp"} />
                                 </Link>
                             </div>
                             <div className='flex flex-col justify-center items-center w-screen space-y-8'>
