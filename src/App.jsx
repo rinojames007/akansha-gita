@@ -30,8 +30,7 @@ import EventInchargeHelp from "./pages/EventInchargeHelp";
 import EventCoordinatorProfile from "./pages/EventCoordinatorProfile";
 import EventCoordinatorSettings from "./pages/EventCoordinatorSettings";
 import EventCoordinatorsNotifications from "./pages/EventCoordinatorsNotifications";
-import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
-import InputEventDetails from "./pages/InputEventDetails";
+
 import HelpSupportProfile from "./pages/HelpSupportProfile";
 import HelpSupportSettings from "./pages/HelpSupportSettings";
 import HelpSupportNotification from "./pages/HelpSupportNotification";
@@ -41,6 +40,10 @@ import TechFestEvents from "./pages/TechFestEvents";
 import Robotics from "./pages/Robotics";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
+
+import Responsibility from "./pages/Input/Responsibility";
+import InputEventDetailsForm from "./pages/Input/InputEventDetailsForm";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -96,7 +99,10 @@ export default function App() {
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/organiserSettings" element={<OrganiserSetting />} />
                 <Route path="/notifications" element={<Notification />} />
-                <Route path="/organiserNotifications" element={<OrganiserNotification />} />
+                <Route
+                    path="/organiserNotifications"
+                    element={<OrganiserNotification />}
+                />
                 <Route path="/anwesh" element={<Anwesh />} />
                 <Route path="/ahwan" element={<Ahwan />} />
                 <Route path="/akanksha" element={<Akanksha />} />
@@ -107,17 +113,39 @@ export default function App() {
                 <Route path="/akankshaWinners" element={<AkankshaWinnersPage />} />
                 <Route path="/ahwanBoys" element={<AhwanEventBoys />} />
                 <Route path="/ahwanGirls" element={<AhwanEventGirls />} />
-                <Route path="/eventInchargeProfile" element={<EventInchargeProfile />} />
-                <Route path="/eventInchargeSettings" element={<EventInchargeSettings />} />
-                <Route path="/eventInchargeNotifications" element={<EventInchargeNotifications />} />
+                <Route
+                    path="/eventInchargeProfile"
+                    element={<EventInchargeProfile />}
+                />
+                <Route
+                    path="/eventInchargeSettings"
+                    element={<EventInchargeSettings />}
+                />
+                <Route
+                    path="/eventInchargeNotifications"
+                    element={<EventInchargeNotifications />}
+                />
                 <Route path="/eventInchargeHelp" element={<EventInchargeHelp />} />
-                <Route path="/eventCoordinatorProfile" element={<EventCoordinatorProfile />} />
-                <Route path="/eventCoordinatorSettings" element={<EventCoordinatorSettings />} />
-                <Route path="/eventCoordinatorNotifications" element={<EventCoordinatorsNotifications />} />
-                <Route path="/eventCoordinatorHelp" element={<EventCoordinatorsHelp />} />
-                <Route path="/helpSupportProfile" element={<HelpSupportProfile />} />
-                <Route path="/helpSupportSettings" element={<HelpSupportSettings />} />
-                <Route path="/helpSupportNotifications" element={<HelpSupportNotification />} />
+                <Route
+                    path="/eventCoordinatorProfile"
+                    element={<EventCoordinatorProfile />}
+                />
+                <Route
+                    path="/eventCoordinatorSettings"
+                    element={<EventCoordinatorSettings />}
+                />
+                <Route
+                    path="/eventCoordinatorNotifications"
+                    element={<EventCoordinatorsNotifications />}
+                />
+                <Route
+                    path="/eventCoordinatorHelp"
+                    element={<EventCoordinatorsHelp />}
+                />
+                <Route
+                    path="/helpSupportNotifications"
+                    element={<HelpSupportNotification />}
+                />
                 <Route path="/eventParticipants" element={<EventParticipants />} />
                 <Route path="/navToPages" element={<NavToPages />} />
                 <Route path="/techFestEvents" element={<TechFestEvents />} />
@@ -125,11 +153,11 @@ export default function App() {
 
                 {/*help and support routes*/}
                 <Route path="/support/login" element={<SupportLogin />} />
-                <Route path="/support/volunteer" element={<SupportLogin />} />
-                <Route path="/support/coordinator" element={<SupportLogin />} />
-                <Route path="/support/incharge" element={<SupportLogin />} />
-                <Route path="/support/organizer" element={<SupportLogin />} />
-                <Route path="/support/event" element={<InputEventDetails />} />
+                <Route path="/support/add" element={<Responsibility />} />
+                <Route path="/support/event" element={<InputEventDetailsForm />} />
+                <Route path="/support/profile" element={<HelpSupportProfile />} />
+                <Route path="/support/settings" element={<HelpSupportSettings />} />
+                <Route path="/support/notifications" element={<HelpSupportNotification />} />
 
             </Routes>
         </BrowserRouter>

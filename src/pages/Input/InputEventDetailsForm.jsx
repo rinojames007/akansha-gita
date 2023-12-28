@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const InputEventDetailsForm = () => {
   const [RulesInputValue, setRulesInputValue] = useState('');
@@ -33,9 +34,27 @@ const InputEventDetailsForm = () => {
 
 
   return (
-    <div className="py-8">
-      <div className=" h-full mx-auto border-2 rounded-xl md:p-6 md:w-[85%] w-[95%] ">
+    <div className="w-full h-full flex flex-col justify-center items-center bg-gradient-to-b from-black via-purple-900 to-black py-9">
+      <div className="absolute top-4 left-4">
+            <Link to="/helpSupportProfile">
+           <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">Back</button> 
+           </Link>
+        </div>
+        <h1 className="flex justify-center items-center sm:text-5xl text-3xl font-bold text-white py-5">Input Event Details</h1>
+      <div className=" h-fit mx-auto border-2 rounded-xl md:p-6 md:w-[85%] w-[95%] ">
         <form action="#" className="flex flex-col space-y-9 p-3 mx-auto">
+        <div className="Event Name flex items-center space-x-4 text-white">
+            <label htmlFor="Event-Id">
+              <span className="text-lg font-bold">Event Id:</span>
+            </label>
+            <input
+              type="text"
+              className="border-2 px-2 w-full md:w-[60%] h-[35px] rounded-sm outline-none text-black bg-slate-200 "
+              name="EventID"
+              placeholder="Event ID..."
+              required
+            />
+          </div>
           <div className="Event Name flex items-center space-x-4 text-white">
             <label htmlFor="Event-Name">
               <span className="text-lg font-bold">Event Name:</span>
