@@ -52,6 +52,14 @@ const HelpSupportProfile = () => {
                                         </p>
                                     </div>
                                 </Link>
+                                
+                                <Link to="/fest/Coordinators" className="w-full flex justify-center">
+                                    <div className="events w-full h-[80px] md:w-[50%] sm:h-[100px] bg-[#2E294E] px-3 rounded-xl opacity-80 hover:scale-90 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
+                                        <p className="text-center opacity-100 text-white ">
+                                            Fest Coordinators
+                                        </p>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
