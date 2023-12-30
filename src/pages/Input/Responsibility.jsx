@@ -5,7 +5,7 @@ function Responsibility() {
   return (
     <div className="w-full min-h-screen h-full flex flex-col justify-center items-center bg-gradient-to-b from-black via-purple-900 to-black">
         <div className="absolute top-4 left-4">
-            <Link to="/helpSupportProfile">
+            <Link to="/support/profile" className="w-fit">
            <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">Back</button> 
            </Link>
         </div>

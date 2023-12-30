@@ -44,6 +44,8 @@ import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
 
 import Responsibility from "./pages/Input/Responsibility";
 import InputEventDetailsForm from "./pages/Input/InputEventDetailsForm";
+import FestCoordinators from "./pages/FestCoordinators";
+import FestCoordinatorInFo from "./Components/Fest-Coordinators/FestCoordinatorInFo";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -158,6 +160,10 @@ export default function App() {
                 <Route path="/support/profile" element={<HelpSupportProfile />} />
                 <Route path="/support/settings" element={<HelpSupportSettings />} />
                 <Route path="/support/notifications" element={<HelpSupportNotification />} />
+
+                {/* Fest-Coordinators info page  */}
+                <Route path="/fest/Coordinators" element={<FestCoordinators/>}/>
+                
 
             </Routes>
         </BrowserRouter>
