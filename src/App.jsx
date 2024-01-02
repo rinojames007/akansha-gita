@@ -46,6 +46,7 @@ import Responsibility from "./pages/Input/Responsibility";
 import InputEventDetailsForm from "./pages/Input/InputEventDetailsForm";
 import FestCoordinators from "./pages/FestCoordinators";
 import FestCoordinatorInFo from "./Components/Fest-Coordinators/FestCoordinatorInFo";
+import CreditsPage from "./pages/CreditsPage";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -144,10 +145,10 @@ export default function App() {
                     path="/eventCoordinatorHelp"
                     element={<EventCoordinatorsHelp />}
                 />
-                <Route
+                {/* <Route
                     path="/helpSupportNotifications"
                     element={<HelpSupportNotification />}
-                />
+                /> */}
                 <Route path="/eventParticipants" element={<EventParticipants />} />
                 <Route path="/navToPages" element={<NavToPages />} />
                 <Route path="/techFestEvents" element={<TechFestEvents />} />
@@ -163,6 +164,9 @@ export default function App() {
 
                 {/* Fest-Coordinators info page  */}
                 <Route path="/fest/Coordinators" element={<FestCoordinators/>}/>
+
+                {/* Website Credits page  */}
+                <Route path="/fest/CreditsPage" element={<CreditsPage/>}/>
                 
 
             </Routes>
