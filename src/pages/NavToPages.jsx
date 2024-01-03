@@ -38,6 +38,14 @@ const NavToPages = () => {
               Help & Support Team Profile
             </Link>
           </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/fest/CreditsPage"
+            >
+              Credits page
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
