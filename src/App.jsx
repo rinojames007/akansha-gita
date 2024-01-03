@@ -47,6 +47,9 @@ import InputEventDetailsForm from "./pages/Input/InputEventDetailsForm";
 import FestCoordinators from "./pages/FestCoordinators";
 import FestCoordinatorInFo from "./Components/Fest-Coordinators/FestCoordinatorInFo";
 import CreditsPage from "./pages/CreditsPage";
+import Gallery from "./pages/Gallery/Gallery";
+import Photoes from "./pages/Gallery/Photoes";
+import Videos from "./pages/Gallery/Videos";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -167,6 +170,11 @@ export default function App() {
 
                 {/* Website Credits page  */}
                 <Route path="/fest/CreditsPage" element={<CreditsPage/>}/>
+
+                {/* Gallery  */}
+                <Route path="/gallery" element={<Gallery/>}/>
+                <Route path="/gallery/Photoes" element={<Photoes/>}/>
+                <Route path="/gallery/Videos" element={<Videos/>}/>
                 
 
             </Routes>
