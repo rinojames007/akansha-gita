@@ -50,6 +50,7 @@ import CreditsPage from "./pages/CreditsPage";
 import Gallery from "./pages/Gallery/Gallery";
 import Photoes from "./pages/Gallery/Photoes";
 import Videos from "./pages/Gallery/Videos";
+import AkankshaRegistrationPage from "./pages/Input/AkankshaRegistrationPage";
 
 export default function App() {
     // const [isSubscribed, setIsSubscribed] = useState(false);
@@ -112,6 +113,7 @@ export default function App() {
                 <Route path="/anwesh" element={<Anwesh />} />
                 <Route path="/ahwan" element={<Ahwan />} />
                 <Route path="/akanksha" element={<Akanksha />} />
+                <Route path="/akanksha/registrationPage" element={<AkankshaRegistrationPage/>} />
                 <Route path="/help" element={<Help />} />
                 <Route path="/organiserHelp" element={<OrganiserHelp />} />
                 <Route path="/anweshWinners" element={<AnweshWinnerPage />} />
