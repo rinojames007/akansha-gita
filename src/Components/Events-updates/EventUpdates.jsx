@@ -7,7 +7,7 @@ const EventUpdates = () => {
         <div className=" flex md:flex-row flex-col items-center py-7 px-3 md:py-[60px] md:px-[40px] md:space-x-6 mx-auto">
             <div className="left hidden md:w-[50%] md:flex items-center mx-auto">
                 <div className="img-container w-full flex items-center rounded-xl shadow-md shadow-black">
-                    <img src="./Demo-pics/Robo-wars.webp" alt="Event-Picture" className='rounded-xl flex items-center ' />
+                    <img src="https://i.postimg.cc/br6N8YFQ/Robo-wars.webp" alt="Event-Picture" className='rounded-xl flex items-center ' />
                 </div>
             </div>
             <div className="right md:w-[50%] w-full px-2 flex flex-col items-center space-y-5 py-3 md:py-0 mx-auto">

@@ -11,13 +11,15 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+
+
   return (
     <nav className="h-[50px] absolute sm:fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 ">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to='/' className="w-full h-full">
         <div
-          style={{ backgroundImage: `url(./image-slider/Photo7.webp)` }}
+          style={{ backgroundImage: `url(https://i.postimg.cc/QMp8CJyN/logo.webp)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
