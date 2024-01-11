@@ -29,14 +29,7 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/about">
-           About
-           </Link>
-          </li>
-          
+                    
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/coordinators">
@@ -44,6 +37,13 @@ const Navbar = () => {
             </Link>
           </li>
           
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <Link
+          to="/gallery">
+            Gallery
+            </Link>
+          </li>
+
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/navToPages">
@@ -89,15 +89,7 @@ const Navbar = () => {
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
-          <li>
-          <Link
-              to="/profile"
-              onClick={toggleMobileMenu}
-              className="flex justify-start items-center px-2"
-            >
-              <span className="sm:hidden">profile</span>
-            </Link>
-          </li>
+          
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -108,15 +100,7 @@ const Navbar = () => {
             </Link>
           </li>
           
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/about"
-              onClick={toggleMobileMenu}
-            >
-              About
-            </Link>
-          </li>
+          
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -124,6 +108,33 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
             >
               Coordinators
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/gallery"
+              onClick={toggleMobileMenu}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/fest/CreditsPage"
+              onClick={toggleMobileMenu}
+            >
+              Credits
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/navToPages"
+              onClick={toggleMobileMenu}
+            >
+              Others
             </Link>
           </li>
           <li>
@@ -137,15 +148,7 @@ const Navbar = () => {
               </button>
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/navToPages"
-              onClick={toggleMobileMenu}
-            >
-              Others
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </nav>
