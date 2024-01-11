@@ -29,14 +29,7 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link
-              to="/profile"
-              
-            >
-              Profile
-            </Link>
-          </li>
+          
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/about">
@@ -55,6 +48,13 @@ const Navbar = () => {
           <Link
           to="/navToPages">
             pages
+            </Link>
+          </li>
+
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <Link
+          to="/fest/CreditsPage">
+            Credits
             </Link>
           </li>
           

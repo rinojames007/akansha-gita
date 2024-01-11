@@ -22,7 +22,7 @@ const AkankshaRegistrationPage = () => {
     let restArr = Categories.filter((elem) => !selectedCategories.includes(elem));
   return (
     <div>
-      <div className="bg-gradient-to-b from-black via-purple-900 pt-[60px] to-black h-full min-h-[10000px]">
+      <div className="bg-gradient-to-b from-black via-purple-900 pt-[60px] to-black h-full min-h-screen">
         <div className="absolute top-4 left-4">
           <Link to="/akanksha" className="w-fit">
             <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">
